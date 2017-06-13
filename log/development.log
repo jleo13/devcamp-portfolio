@@ -1,0 +1,360 @@
+  [1m[35m (20.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (13.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5860861906129790490);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-06-12 17:58:06.076218"], ["updated_at", "2017-06-12 17:58:06.076218"]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5860861906129790490)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 10.240.0.207 at 2017-06-13 14:22:36 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/railties-5.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/railties-5.0.3/lib/rails/templates/rails/welcome/index.html.erb (5.2ms)
+Completed 200 OK in 28ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5860861906129790490);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateBlogs (20170613143355)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (22.8ms)[0m  [1m[35mCREATE TABLE "blogs" ("id" serial primary key, "title" character varying, "body" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170613143355"]]
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5860861906129790490)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/blogs" for 10.240.1.32 at 2017-06-13 14:41:33 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 790ms (Views: 783.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/blogs/new" for 10.240.0.69 at 2017-06-13 14:41:49 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (28.9ms)
+  Rendered blogs/new.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 160ms (Views: 150.6ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/blogs" for 10.240.1.17 at 2017-06-13 14:55:48 +0000
+Cannot render console from 10.240.1.17! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YkPVF5a5mu2QzlGAQZIH04Rptt2ps7SW+wYsYQO22V3GWQ2PHFFyiUNz5t+m9umolg84MF/SxJHtkQxkusnVzA==", "blog"=>{"title"=>"yo", "body"=>"yo"}, "commit"=>"Create Blog"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "yo"], ["body", "yo"], ["created_at", "2017-06-13 14:55:48.790645"], ["updated_at", "2017-06-13 14:55:48.790645"]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/blogs/1
+Completed 302 Found in 9ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/blogs/1" for 10.240.1.19 at 2017-06-13 14:55:48 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 136ms (Views: 129.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs" for 10.240.1.64 at 2017-06-13 14:55:53 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.9ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 118ms (Views: 115.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs/1/edit" for 10.240.1.20 at 2017-06-13 14:55:55 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (2.1ms)
+  Rendered blogs/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 87ms (Views: 84.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs" for 10.240.1.64 at 2017-06-13 14:55:57 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 115ms (Views: 113.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs/new" for 10.240.0.204 at 2017-06-13 14:55:58 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (2.1ms)
+  Rendered blogs/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 76ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs" for 10.240.1.19 at 2017-06-13 14:56:07 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+tMx6sUL3lUfCbuLP6wulrqzGXumdwQflk/CZSSmwXdeyelyT+M2Mcy0DNTYyMDtqNWXllAWdBiA2OJgndnN5g==", "blog"=>{"title"=>"yo yo", "body"=>"yo"}, "commit"=>"Create Blog"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "yo yo"], ["body", "yo"], ["created_at", "2017-06-13 14:56:07.224939"], ["updated_at", "2017-06-13 14:56:07.224939"]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/blogs/2
+Completed 302 Found in 10ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/blogs/2" for 10.240.1.60 at 2017-06-13 14:56:07 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 39ms (Views: 35.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs" for 10.240.0.119 at 2017-06-13 14:56:13 +0000
+Cannot render console from 10.240.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 99ms (Views: 97.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs/1/edit" for 10.240.1.15 at 2017-06-13 14:56:16 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (2.3ms)
+  Rendered blogs/edit.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 159ms (Views: 156.4ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/blogs/1" for 10.240.0.110 at 2017-06-13 15:11:25 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U+DdEb2CCLCMWvz6si0FL2NfoE3Amf0G80g6hMyxyjOsrMrSGU/4eX7NQbbZuDzPMZNWsU2sTFED+xyR6uetyQ==", "blog"=>{"title"=>"yo", "body"=>"yo"}, "commit"=>"Update Blog", "id"=>"1"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/blogs/1
+Completed 302 Found in 7ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/blogs/1" for 10.240.0.110 at 2017-06-13 15:11:25 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 40ms (Views: 35.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs" for 10.240.1.64 at 2017-06-13 15:11:27 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 183ms (Views: 180.8ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/blogs/2" for 10.240.0.110 at 2017-06-13 15:11:30 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ubrI7ct7CKrCbY17aG/gacrFo/hb9/kpL4nUrwoopcSHhxsEpfj1JN4dBs+/fQQ1dUus9o7jwd9Oe5cogypU9A==", "id"=>"2"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (5.5ms)[0m  [1m[31mDELETE FROM "blogs" WHERE "blogs"."id" = $1[0m  [["id", 2]]
+  [1m[35m (10.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/blogs
+Completed 302 Found in 26ms (ActiveRecord: 16.3ms)
+
+
+Started GET "/blogs" for 10.240.0.207 at 2017-06-13 15:11:30 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 41ms (Views: 38.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs" for 10.240.0.207 at 2017-06-13 15:11:34 +0000
+Cannot render console from 10.240.0.207! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/blogs/1" for 10.240.0.179 at 2017-06-13 15:11:36 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CIdk5M8eLY2yIN68sIyKbnNeFEzmh+OoxtoIuXXsCGw2urcNoZ3QA65QVQhnnm4yzNAbQjOT216nKEs+/O75XA==", "id"=>"1"}
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (87.4ms)[0m  [1m[31mDELETE FROM "blogs" WHERE "blogs"."id" = $1[0m  [["id", 1]]
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/blogs
+Completed 302 Found in 97ms (ActiveRecord: 91.3ms)
+
+
+Started GET "/blogs" for 10.240.1.15 at 2017-06-13 15:11:36 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 41ms (Views: 38.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs/new" for 10.240.0.179 at 2017-06-13 15:12:11 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (3.2ms)
+  Rendered blogs/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 47ms (Views: 31.7ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/blogs" for 10.240.1.32 at 2017-06-13 15:12:15 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P+VnHITXGZywjnWmx029ky3lw0hxqDkkBKywVDTKLNCb/7+EDj/x+GMzwvkgKVPoP4NNpYfJSSMSO5BRjbUgQQ==", "blog"=>{"title"=>"yo yo", "body"=>""}, "commit"=>"Create Blog"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "yo yo"], ["body", ""], ["created_at", "2017-06-13 15:12:15.180829"], ["updated_at", "2017-06-13 15:12:15.180829"]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/blogs/3
+Completed 302 Found in 7ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/blogs/3" for 10.240.1.19 at 2017-06-13 15:12:15 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 35ms (Views: 30.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 10.240.1.15 at 2017-06-13 15:12:17 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 56ms (Views: 53.5ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/blogs/3" for 10.240.0.119 at 2017-06-13 15:12:20 +0000
+Cannot render console from 10.240.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"skcHafldsWOjhkFqOKFLccy5UoMuQbhCU2FbZYpSpdCMetSAl95M7b/2yt7vs68tczddjftVgLQykxjiA1BU4A==", "id"=>"3"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "blogs" WHERE "blogs"."id" = $1[0m  [["id", 3]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/blogs
+Completed 302 Found in 11ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/blogs" for 10.240.0.186 at 2017-06-13 15:12:20 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 42ms (Views: 39.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs/new" for 10.240.0.204 at 2017-06-13 15:12:30 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (4.0ms)
+  Rendered blogs/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 71ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs" for 10.240.1.19 at 2017-06-13 15:12:33 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jat3otj9NrOp/nH0uXDGT6awt6dtihDmL/7p95ksQomBsa86UhXe13pDxqteFCg0tNY5SpvrYOE5acnyIFNOGA==", "blog"=>{"title"=>"yo", "body"=>""}, "commit"=>"Create Blog"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "blogs" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "yo"], ["body", ""], ["created_at", "2017-06-13 15:12:33.812154"], ["updated_at", "2017-06-13 15:12:33.812154"]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/blogs/4
+Completed 302 Found in 11ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/blogs/4" for 10.240.0.179 at 2017-06-13 15:12:33 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 40ms (Views: 36.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs" for 10.240.0.69 at 2017-06-13 15:12:35 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 127ms (Views: 124.6ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/blogs/4" for 10.240.0.69 at 2017-06-13 15:12:37 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5IYpr25A/JUcMG1fI4sRvQb5xezzj6pc5QWTmJ96x/nau/pGAMMBGwBA5uv0mfXhuXfK4iabkqqE99AfFng2yQ==", "id"=>"4"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "blogs" WHERE "blogs"."id" = $1[0m  [["id", 4]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/blogs
+Completed 302 Found in 7ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/blogs" for 10.240.1.19 at 2017-06-13 15:12:37 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 34ms (Views: 31.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 10.240.0.179 at 2017-06-13 15:12:39 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 107ms (Views: 105.5ms | ActiveRecord: 0.3ms)
+
+
