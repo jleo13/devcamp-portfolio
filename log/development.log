@@ -1096,3 +1096,108 @@ Processing by PortfoliosController#index as HTML
 Completed 200 OK in 165ms (Views: 162.4ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/portfolios" for 65.60.11.19 at 2017-06-15 16:19:52 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/application
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 74ms (Views: 57.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/portfolios/new" for 65.60.11.19 at 2017-06-15 16:20:02 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#new as HTML
+  Rendering portfolios/new.html.erb within layouts/application
+  Rendered portfolios/new.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1> Create a new Portfolo Item </h1>
+    2: 
+    3: <%= form_for(@portfolio_item) do |f| %>
+    4:   
+    5: 
+    6:   <div class="field">
+  
+app/views/portfolios/new.html.erb:3:in `_app_views_portfolios_new_html_erb__1964997613629568654_70339555699800'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.1ms)
+Started GET "/portfolios/new" for 65.60.11.19 at 2017-06-15 16:20:23 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#new as HTML
+  Rendering portfolios/new.html.erb within layouts/application
+  Rendered portfolios/new.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 77ms (Views: 58.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/portfolios/new" for 65.60.11.19 at 2017-06-15 16:20:49 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#new as HTML
+  Rendering portfolios/new.html.erb within layouts/application
+  Rendered portfolios/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 200ms (Views: 190.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portfolios/new" for 65.60.11.19 at 2017-06-15 16:28:37 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#new as HTML
+  Rendering portfolios/new.html.erb within layouts/application
+  Rendered portfolios/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 60ms (Views: 39.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/portfolios/" for 65.60.11.19 at 2017-06-15 16:28:43 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/application
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 199ms (Views: 196.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/portfolios/" for 65.60.11.19 at 2017-06-15 16:31:00 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/application
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 58ms (Views: 55.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/portfolios/new" for 65.60.11.19 at 2017-06-15 16:31:21 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#new as HTML
+  Rendering portfolios/new.html.erb within layouts/application
+  Rendered portfolios/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 224ms (Views: 221.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/portfolios" for 65.60.11.19 at 2017-06-15 16:31:30 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZVaLpQYrj1PNTsPAPv19UYMMb4MqfT4IyrVsrA/Y2A9G5ESf5Z9DsRXmtfSc6d9ZdcEYNvfpDO1jAloSNNuxvA==", "portfolio"=>{"title"=>"item", "body"=>"item"}, "commit"=>"Create Portfolio"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.5ms)[0m  [1m[32mINSERT INTO "portfolios" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "item"], ["body", "item"], ["created_at", "2017-06-15 16:31:30.997839"], ["updated_at", "2017-06-15 16:31:30.997839"]]
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://workspace-jackleonard-jleo23.c9users.io/portfolios
+Completed 302 Found in 26ms (ActiveRecord: 11.9ms)
+
+
+Started GET "/portfolios" for 65.60.11.19 at 2017-06-15 16:31:31 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/application
+  [1m[36mPortfolio Load (0.7ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 65ms (Views: 61.5ms | ActiveRecord: 0.7ms)
+
+
