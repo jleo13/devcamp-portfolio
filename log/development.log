@@ -1390,3 +1390,91 @@ Processing by PortfoliosController#index as HTML
 Completed 200 OK in 67ms (Views: 64.3ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/portfolios" for 65.60.11.19 at 2017-06-15 17:08:27 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/application
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 40ms (Views: 38.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/portfolios/new" for 65.60.11.19 at 2017-06-15 17:08:31 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#new as HTML
+  Rendering portfolios/new.html.erb within layouts/application
+  Rendered portfolios/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 71ms (Views: 69.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portfolios" for 65.60.11.19 at 2017-06-15 17:10:46 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/application
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 57ms (Views: 54.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/portfolios/new" for 65.60.11.19 at 2017-06-15 17:10:48 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#new as HTML
+  Rendering portfolios/new.html.erb within layouts/application
+  Rendered portfolios/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 114ms (Views: 112.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portfolios/new" for 65.60.11.19 at 2017-06-15 17:10:50 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#new as HTML
+  Rendering portfolios/new.html.erb within layouts/application
+  Rendered portfolios/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 189ms (Views: 188.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portfolios/new" for 65.60.11.19 at 2017-06-15 17:10:52 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#new as HTML
+  Rendering portfolios/new.html.erb within layouts/application
+  Rendered portfolios/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 182ms (Views: 180.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portfolios" for 65.60.11.19 at 2017-06-15 17:12:03 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/application
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 93ms (Views: 90.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/portfolios" for 65.60.11.19 at 2017-06-15 17:18:16 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/application
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 188ms (Views: 184.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/portfolios/3/edit" for 65.60.11.19 at 2017-06-15 17:18:19 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering portfolios/edit.html.erb within layouts/application
+  Rendered portfolios/edit.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 97ms (Views: 92.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/portfolios/1/edit" for 65.60.11.19 at 2017-06-15 17:18:23 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/edit.html.erb within layouts/application
+  Rendered portfolios/edit.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 127ms (Views: 123.9ms | ActiveRecord: 0.5ms)
+
+
