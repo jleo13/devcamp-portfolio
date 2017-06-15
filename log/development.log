@@ -1478,3 +1478,240 @@ Processing by PortfoliosController#edit as HTML
 Completed 200 OK in 127ms (Views: 123.9ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/portfolios/5" for 65.60.11.19 at 2017-06-15 17:29:24 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendering portfolios/show.html.erb within layouts/application
+  Rendered portfolios/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 58ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portfolios/5" for 65.60.11.19 at 2017-06-15 17:32:01 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendering portfolios/show.html.erb within layouts/application
+  Rendered portfolios/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 199ms (Views: 196.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portfolios/3" for 65.60.11.19 at 2017-06-15 17:32:06 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering portfolios/show.html.erb within layouts/application
+  Rendered portfolios/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 198ms (Views: 84.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portfolios/3/edit" for 65.60.11.19 at 2017-06-15 17:32:24 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPortfolio Load (0.7ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering portfolios/edit.html.erb within layouts/application
+  Rendered portfolios/edit.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 210ms (Views: 204.9ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/portfolios/3" for 65.60.11.19 at 2017-06-15 17:32:26 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AiFnqbB9WXiUGc1KlEOsRa/YuJ+Q31KrkznBGC57XTchk6iTU8mVmkyxu342Vw5NWRXPKk1LYE46jvemFXg0hA==", "portfolio"=>{"title"=>"Portfolio title: 2", "subtitle"=>"My great service, ABJ", "body"=>" An Avatar is an iconic portrait\r\nused to represent yourself.\r\nUsually shown without any eyes\r\n, they are a simple and effective way to sho\r\nw who you are without posting an image of yourself."}, "commit"=>"Update Portfolio", "id"=>"3"}
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "portfolios" SET "body" = $1, "updated_at" = $2 WHERE "portfolios"."id" = $3[0m  [["body", " An Avatar is an iconic portrait\r\nused to represent yourself.\r\nUsually shown without any eyes\r\n, they are a simple and effective way to sho\r\nw who you are without posting an image of yourself."], ["updated_at", "2017-06-15 17:32:26.967369"], ["id", 3]]
+  [1m[35m (11.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://workspace-jackleonard-jleo23.c9users.io/portfolios
+Completed 302 Found in 20ms (ActiveRecord: 13.6ms)
+
+
+Started GET "/portfolios" for 65.60.11.19 at 2017-06-15 17:32:27 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/application
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 58ms (Views: 52.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/portfolios" for 65.60.11.19 at 2017-06-15 17:33:31 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/application
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 107ms (Views: 105.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/portfolios/4" for 65.60.11.19 at 2017-06-15 17:33:46 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering portfolios/show.html.erb within layouts/application
+  Rendered portfolios/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portfolios/4" for 65.60.11.19 at 2017-06-15 17:36:38 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering portfolios/show.html.erb within layouts/application
+  Rendered portfolios/show.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `main_image' for nil:NilClass):
+    1: <%= image_tag @portfolio_item.main_image%>
+    2: 
+    3: <h1> <%= @portfolio_item.title %>  </h1>
+    4: 
+  
+app/views/portfolios/show.html.erb:1:in `_app_views_portfolios_show_html_erb__1497592377114680373_70339333313000'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.3ms)
+Started GET "/portfolios/4" for 65.60.11.19 at 2017-06-15 17:37:19 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering portfolios/show.html.erb within layouts/application
+  Rendered portfolios/show.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `main_image' for nil:NilClass):
+    1: <%= image_tag @portfolio_item.main_image %>
+    2: 
+    3: <h1> <%= @portfolio_item.title %>  </h1>
+    4: 
+  
+app/views/portfolios/show.html.erb:1:in `_app_views_portfolios_show_html_erb__1497592377114680373_70339323387120'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.0ms)
+Started GET "/portfolios/4" for 65.60.11.19 at 2017-06-15 17:38:54 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering portfolios/show.html.erb within layouts/application
+  Rendered portfolios/show.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: 
+    2: 
+    3: <h1> <%= @portfolio_item.title %>  </h1>
+    4: 
+    5: 
+    6:  <em> <%= @portfolio_item.subtitle %> </em>
+  
+app/views/portfolios/show.html.erb:3:in `_app_views_portfolios_show_html_erb__1497592377114680373_70339554452900'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.1ms)
+Started GET "/portfolios/4" for 65.60.11.19 at 2017-06-15 17:41:22 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/application
+  Rendered portfolios/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 67ms (Views: 39.6ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/portfolios/4" for 65.60.11.19 at 2017-06-15 17:41:40 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/application
+  Rendered portfolios/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 174ms (Views: 171.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/portfolios/" for 65.60.11.19 at 2017-06-15 17:46:08 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/application
+  [1m[36mPortfolio Load (0.7ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 112ms (Views: 109.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/portfolios/6" for 65.60.11.19 at 2017-06-15 17:46:10 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/application
+  Rendered portfolios/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 125ms (Views: 122.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/portfolios/10" for 65.60.11.19 at 2017-06-15 17:46:16 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/application
+  Rendered portfolios/show.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (nil is not a valid asset source):
+    1: <%= image_tag @portfolio_item.main_image %>
+    2: 
+    3: <h1> <%= @portfolio_item.title %>  </h1>
+    4: 
+  
+app/views/portfolios/show.html.erb:1:in `_app_views_portfolios_show_html_erb__1497592377114680373_70339553954100'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.0ms)
+Started GET "/portfolios/" for 65.60.11.19 at 2017-06-15 17:46:24 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/application
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 174ms (Views: 171.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/portfolios/10/edit" for 65.60.11.19 at 2017-06-15 17:46:28 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering portfolios/edit.html.erb within layouts/application
+  Rendered portfolios/edit.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 43ms (Views: 40.3ms | ActiveRecord: 0.3ms)
+
+
