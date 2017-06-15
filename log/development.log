@@ -1201,3 +1201,192 @@ Processing by PortfoliosController#index as HTML
 Completed 200 OK in 65ms (Views: 61.5ms | ActiveRecord: 0.7ms)
 
 
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Started GET "/portfolios/5/edit" for 65.60.11.19 at 2017-06-15 16:47:35 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering portfolios/edit.html.erb within layouts/application
+  Rendered portfolios/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 186ms (Views: 39.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/portfolios/5/edit" for 65.60.11.19 at 2017-06-15 16:51:08 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering portfolios/edit.html.erb within layouts/application
+  Rendered portfolios/edit.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 59ms (Views: 55.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/portfolios/" for 65.60.11.19 at 2017-06-15 16:58:26 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/application
+  [1m[36mPortfolio Load (0.7ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 69ms (Views: 55.1ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/portfolios/edit" for 65.60.11.19 at 2017-06-15 16:58:37 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for PortfoliosController):
+  
+actionpack (5.0.3) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.3) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.3) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.3) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.3) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.3) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.3) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.3) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.3) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.6ms)
+Started GET "/portfolios/1/edit" for 65.60.11.19 at 2017-06-15 16:59:00 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/edit.html.erb within layouts/application
+  Rendered portfolios/edit.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 36ms (Views: 33.2ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/portfolios/1" for 65.60.11.19 at 2017-06-15 16:59:07 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FXEhXBU/jlaaNtuvmVWmRwfqb3xgC0iT6atVvd3zx1w2w+5m9otCtEKerZs7QQRP8ScYyb2fenZAHGMD5vCu7w==", "portfolio"=>{"title"=>"Portfolio title: 0", "subtitle"=>"My great service, ABJ\r\nhii", "body"=>" An Avatar is an iconic portrait\r\nused to represent yourself.\r\nUsually shown without any eyes\r\n, they are a simple and effective way to sho\r\nw who you are without posting an image of yourself."}, "commit"=>"Update Portfolio", "id"=>"1"}
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "portfolios" SET "subtitle" = $1, "body" = $2, "updated_at" = $3 WHERE "portfolios"."id" = $4[0m  [["subtitle", "My great service, ABJ\r\nhii"], ["body", " An Avatar is an iconic portrait\r\nused to represent yourself.\r\nUsually shown without any eyes\r\n, they are a simple and effective way to sho\r\nw who you are without posting an image of yourself."], ["updated_at", "2017-06-15 16:59:07.116128"], ["id", 1]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://workspace-jackleonard-jleo23.c9users.io/portfolios
+Completed 302 Found in 30ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/portfolios" for 65.60.11.19 at 2017-06-15 16:59:07 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/application
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 46ms (Views: 43.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/portfolios" for 65.60.11.19 at 2017-06-15 16:59:38 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/application
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 97ms (Views: 89.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/portfolios/1/edit" for 65.60.11.19 at 2017-06-15 16:59:43 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/edit.html.erb within layouts/application
+  Rendered portfolios/edit.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 64ms (Views: 59.6ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/portfolios/1" for 65.60.11.19 at 2017-06-15 16:59:58 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4DHe8aLuV24LlGNLk4u9ArIMBXGqScZHOS4W8bUCbyjDgxHLQVqbjNM8FX8xnx8KRMFyxHfd9KKQmSBPjgEGmw==", "portfolio"=>{"title"=>"Portfolio title: 0", "subtitle"=>"My great service, ABJ\r\nhiiiii", "body"=>" An Avatar is an iconic portrait\r\nused to represent yourself.\r\nUsually shown without any eyes\r\n, they are a simple and effective way to showww hi\r\nw who you are without posting an image of yourself."}, "commit"=>"Update Portfolio", "id"=>"1"}
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "portfolios" SET "subtitle" = $1, "body" = $2, "updated_at" = $3 WHERE "portfolios"."id" = $4[0m  [["subtitle", "My great service, ABJ\r\nhiiiii"], ["body", " An Avatar is an iconic portrait\r\nused to represent yourself.\r\nUsually shown without any eyes\r\n, they are a simple and effective way to showww hi\r\nw who you are without posting an image of yourself."], ["updated_at", "2017-06-15 16:59:58.902192"], ["id", 1]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://workspace-jackleonard-jleo23.c9users.io/portfolios
+Completed 302 Found in 9ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/portfolios" for 65.60.11.19 at 2017-06-15 16:59:58 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/application
+  [1m[36mPortfolio Load (27.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 67ms (Views: 38.0ms | ActiveRecord: 27.4ms)
+
+
+Started GET "/portfolios/2/edit" for 65.60.11.19 at 2017-06-15 17:00:19 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering portfolios/edit.html.erb within layouts/application
+  Rendered portfolios/edit.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 169ms (Views: 164.5ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/portfolios/2" for 65.60.11.19 at 2017-06-15 17:00:29 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xH9QrpNcGkWcjlfut+8X4jC1tXQeC3pF/9U/8PtxfWjnzZ+UcOjWp0QmIdoV+7XqxnjCwcOfSKBWYglOwHIU2w==", "portfolio"=>{"title"=>"Portfolio title: 1", "subtitle"=>"My great service, ABJ", "body"=>" An Avatar is an iconic portrait\r\nused to represent yourself.\r\nUsually shown without any eyes\r\n, they are a simple and effective way to sho\r\nw who you are without posting an image of yourself. test"}, "commit"=>"Update Portfolio", "id"=>"2"}
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "portfolios" SET "body" = $1, "updated_at" = $2 WHERE "portfolios"."id" = $3[0m  [["body", " An Avatar is an iconic portrait\r\nused to represent yourself.\r\nUsually shown without any eyes\r\n, they are a simple and effective way to sho\r\nw who you are without posting an image of yourself. test"], ["updated_at", "2017-06-15 17:00:29.012628"], ["id", 2]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to https://workspace-jackleonard-jleo23.c9users.io/portfolios
+Completed 302 Found in 10ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/portfolios" for 65.60.11.19 at 2017-06-15 17:00:29 +0000
+Cannot render console from 65.60.11.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/application
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 67ms (Views: 64.3ms | ActiveRecord: 0.6ms)
+
+
