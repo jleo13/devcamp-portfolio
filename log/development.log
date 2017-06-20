@@ -2797,3 +2797,760 @@ Migrating to AddPostStatusToBlogs (20170619173406)
   [1m[36mBlog Load (0.9ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" ORDER BY "blogs"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
   [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs" WHERE "blogs"."status" = $1[0m  [["status", 1]]
   [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs" WHERE "blogs"."status" = $1[0m  [["status", 1]]
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" ORDER BY "blogs"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" ORDER BY "blogs"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for 10.240.0.186 at 2017-06-20 15:16:30 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (109.8ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (3.2ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (131.2ms)
+Completed 200 OK in 180ms (Views: 50.0ms | ActiveRecord: 118.7ms)
+
+
+Started GET "/blogs" for 10.240.1.20 at 2017-06-20 15:16:37 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 136ms (Views: 131.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs/asdfasdf/edit" for 10.240.0.241 at 2017-06-20 15:18:11 +0000
+Cannot render console from 10.240.0.241! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"asdfasdf"}
+  [1m[36mBlog Load (2.7ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "asdfasdf"], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (3.9ms)
+  Rendered blogs/edit.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 172ms (Views: 160.8ms | ActiveRecord: 2.7ms)
+
+
+Started PATCH "/blogs/asdfasdf" for 10.240.0.204 at 2017-06-20 15:18:17 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bTi52nXLoEWoCwW6T/BD9ZgEld9IlLJzf5vyvBCit8J38kB4D8Vkav+Dz+3Jy6oWehFt427NvCHeP5yjpxbgSQ==", "blog"=>{"title"=>"asdfasdf", "body"=>"Sed ut perspiciatis unde\r\n   omnis iste natus error s\r\n   it voluptatem accusantium dol\r\n   oremque laudantium, totam rem ape\r\n   riam, eaque ipsa quae ab illo inve\r\n   ntore veritatis et quasi architecto be\r\n   atae vitae dicta sunt explicabo. Nemo\r\n   enim ipsam voluptatem quia voluptas sit\r\n   aspernatur aut odit aut fugit, sed quia\r\n   consequuntur magni dolores eos qui ratio\r\n   ne voluptatem sequi nesciunt. Neque porr\r\n   o quisquam est, qui dolorem ipsum quia d\r\n   olor sit amet, consectetur, adipisci veli\r\n   t, sed quia non numquam eius modi tempora\r\n   incidunt ut labore et dolore magnam aliquam\r\n   quaerat voluptatem. Ut enim ad minima veniam\r\n   quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut\r\n   aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in\r\n   ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum\r\n   fugiat quo voluptas nulla pariat"}, "commit"=>"Update Blog", "id"=>"asdfasdf"}
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "asdfasdf"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "blogs" SET "body" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["body", "Sed ut perspiciatis unde\r\n   omnis iste natus error s\r\n   it voluptatem accusantium dol\r\n   oremque laudantium, totam rem ape\r\n   riam, eaque ipsa quae ab illo inve\r\n   ntore veritatis et quasi architecto be\r\n   atae vitae dicta sunt explicabo. Nemo\r\n   enim ipsam voluptatem quia voluptas sit\r\n   aspernatur aut odit aut fugit, sed quia\r\n   consequuntur magni dolores eos qui ratio\r\n   ne voluptatem sequi nesciunt. Neque porr\r\n   o quisquam est, qui dolorem ipsum quia d\r\n   olor sit amet, consectetur, adipisci veli\r\n   t, sed quia non numquam eius modi tempora\r\n   incidunt ut labore et dolore magnam aliquam\r\n   quaerat voluptatem. Ut enim ad minima veniam\r\n   quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut\r\n   aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in\r\n   ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum\r\n   fugiat quo voluptas nulla pariat"], ["updated_at", "2017-06-20 15:18:17.880340"], ["id", 1]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/blogs/asdfasdf
+Completed 302 Found in 14ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/blogs/asdfasdf" for 10.240.0.119 at 2017-06-20 15:18:17 +0000
+Cannot render console from 10.240.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"asdfasdf"}
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "asdfasdf"], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 52ms (Views: 47.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs" for 10.240.1.20 at 2017-06-20 15:18:19 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.1ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 116ms (Views: 113.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/blogs/asdfasdf-d3f86d19-9458-438a-a1e5-6e4ffbb1548f" for 10.240.1.19 at 2017-06-20 15:18:29 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"asdfasdf-d3f86d19-9458-438a-a1e5-6e4ffbb1548f"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "asdfasdf-d3f86d19-9458-438a-a1e5-6e4ffbb1548f"], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 166ms (Views: 162.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs/asdfasdf" for 10.240.0.119 at 2017-06-20 15:18:32 +0000
+Cannot render console from 10.240.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"asdfasdf"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "asdfasdf"], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 137ms (Views: 133.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs/asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae" for 10.240.0.119 at 2017-06-20 15:18:34 +0000
+Cannot render console from 10.240.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae"}
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae"], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 140ms (Views: 135.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs" for 10.240.0.182 at 2017-06-20 15:19:35 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 36ms (Views: 34.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs" for 10.240.0.182 at 2017-06-20 15:20:34 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 149ms (Views: 147.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.240.0.204 at 2017-06-20 15:20:40 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 201ms (Views: 197.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs/asdfasdf-d3f86d19-9458-438a-a1e5-6e4ffbb1548f/edit" for 10.240.0.69 at 2017-06-20 15:21:14 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"asdfasdf-d3f86d19-9458-438a-a1e5-6e4ffbb1548f"}
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "asdfasdf-d3f86d19-9458-438a-a1e5-6e4ffbb1548f"], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (4.0ms)
+  Rendered blogs/edit.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 82ms (Views: 78.4ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/blogs/asdfasdf-d3f86d19-9458-438a-a1e5-6e4ffbb1548f" for 10.240.0.187 at 2017-06-20 15:21:17 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rlqGS06YeUUpFbV4mETRHrYldPBLziLv3pkHARpca26/nDY48Ky/KT9jMfb0s92mqkQQ+oDLLBsJTxH3IY+giA==", "blog"=>{"title"=>"asdfasdf", "body"=>"Sed ut perspiciatis unde omnis iste natus error s it voluptatem accusantium dol oremque laudantium, totam rem ape riam, eaque ipsa quae ab illo inve ntore veritatis et quasi architecto be atae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratio ne voluptatem sequi nesciunt. Neque porr o quisquam est, qui dolorem ipsum quia d olor sit amet, consectetur, adipisci veli t, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariat"}, "commit"=>"Update Blog", "id"=>"asdfasdf-d3f86d19-9458-438a-a1e5-6e4ffbb1548f"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "asdfasdf-d3f86d19-9458-438a-a1e5-6e4ffbb1548f"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "blogs" SET "body" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["body", "Sed ut perspiciatis unde omnis iste natus error s it voluptatem accusantium dol oremque laudantium, totam rem ape riam, eaque ipsa quae ab illo inve ntore veritatis et quasi architecto be atae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratio ne voluptatem sequi nesciunt. Neque porr o quisquam est, qui dolorem ipsum quia d olor sit amet, consectetur, adipisci veli t, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariat"], ["updated_at", "2017-06-20 15:21:17.416727"], ["id", 5]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/blogs/asdfasdf-d3f86d19-9458-438a-a1e5-6e4ffbb1548f
+Completed 302 Found in 11ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/blogs/asdfasdf-d3f86d19-9458-438a-a1e5-6e4ffbb1548f" for 10.240.0.187 at 2017-06-20 15:21:17 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"asdfasdf-d3f86d19-9458-438a-a1e5-6e4ffbb1548f"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "asdfasdf-d3f86d19-9458-438a-a1e5-6e4ffbb1548f"], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 49ms (Views: 45.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs" for 10.240.0.69 at 2017-06-20 15:21:19 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs" for 10.240.0.204 at 2017-06-20 15:27:20 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (25.2ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 4.5ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"toggle_status", :controller=>"blogs"} missing required keys: [:id]):
+    16:       <tr>
+    17:         <td><%= blog.title %></td>
+    18:         <td><%= blog.body %></td>
+    19:          <td><%= link_to blog.status, toggle_status_blog_path %></td>
+    20:         <td><%= link_to 'Show', blog %></td>
+    21:         <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
+    22:         <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  
+app/views/blogs/index.html.erb:19:in `block in _app_views_blogs_index_html_erb__1361123256457542751_28526760'
+app/views/blogs/index.html.erb:15:in `_app_views_blogs_index_html_erb__1361123256457542751_28526760'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.1ms)
+Started GET "/blogs" for 10.240.0.119 at 2017-06-20 15:29:10 +0000
+Cannot render console from 10.240.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (260.8ms)
+Completed 500 Internal Server Error in 264ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `toggle_status_path' for #<#<Class:0x0000000364bd58>:0x007faa25c10828>
+Did you mean?  toggle_status_blog_path):
+    16:       <tr>
+    17:         <td><%= blog.title %></td>
+    18:         <td><%= blog.body %></td>
+    19:          <td><%= link_to blog.status, toggle_status_path %></td>
+    20:         <td><%= link_to 'Show', blog %></td>
+    21:         <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
+    22:         <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  
+app/views/blogs/index.html.erb:19:in `block in _app_views_blogs_index_html_erb__1361123256457542751_70184377289000'
+app/views/blogs/index.html.erb:15:in `_app_views_blogs_index_html_erb__1361123256457542751_70184377289000'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.1ms)
+Started GET "/blogs" for 10.240.0.241 at 2017-06-20 15:29:38 +0000
+Cannot render console from 10.240.0.241! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (61.8ms)
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 37.4ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"toggle_status", :controller=>"blogs"} missing required keys: [:id]):
+    16:       <tr>
+    17:         <td><%= blog.title %></td>
+    18:         <td><%= blog.body %></td>
+    19:          <td><%= link_to blog.status, toggle_status_blog_path %></td>
+    20:         <td><%= link_to 'Show', blog %></td>
+    21:         <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
+    22:         <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  
+app/views/blogs/index.html.erb:19:in `block in _app_views_blogs_index_html_erb__1361123256457542751_70184372724860'
+app/views/blogs/index.html.erb:15:in `_app_views_blogs_index_html_erb__1361123256457542751_70184372724860'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.2ms)
+Started GET "/blogs" for 10.240.1.19 at 2017-06-20 15:29:59 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"toggle_status", :controller=>"blogs"} missing required keys: [:id]):
+    16:       <tr>
+    17:         <td><%= blog.title %></td>
+    18:         <td><%= blog.body %></td>
+    19:          <td><%= link_to blog.status, toggle_status_blog_path %></td>
+    20:         <td><%= link_to 'Show', blog %></td>
+    21:         <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
+    22:         <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  
+app/views/blogs/index.html.erb:19:in `block in _app_views_blogs_index_html_erb__1361123256457542751_27358240'
+app/views/blogs/index.html.erb:15:in `_app_views_blogs_index_html_erb__1361123256457542751_27358240'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (41.8ms)
+Started GET "/blogs" for 10.240.0.186 at 2017-06-20 15:30:07 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 97ms (Views: 94.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs/asdfasdf/toggle_status" for 10.240.0.119 at 2017-06-20 15:30:11 +0000
+Cannot render console from 10.240.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/blogs/asdfasdf/toggle_status"):
+  
+actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered collection of /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (12.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.5ms)
+Started GET "/blogs" for 10.240.0.182 at 2017-06-20 15:30:13 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 96ms (Views: 93.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs/asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae/toggle_status" for 10.240.1.64 at 2017-06-20 15:30:25 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/blogs/asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae/toggle_status"):
+  
+actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered collection of /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (7.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (53.0ms)
+Started GET "/blogs" for 10.240.0.241 at 2017-06-20 15:30:28 +0000
+Cannot render console from 10.240.0.241! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 123ms (Views: 120.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs/asdfasdf-2ad87c8d-aa79-4768-9739-ec0e55856eca/toggle_status" for 10.240.0.187 at 2017-06-20 15:30:30 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/blogs/asdfasdf-2ad87c8d-aa79-4768-9739-ec0e55856eca/toggle_status"):
+  
+actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered collection of /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [20 times] (12.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.5ms)
+Started GET "/blogs" for 10.240.1.32 at 2017-06-20 15:30:31 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 66ms (Views: 62.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs" for 10.240.0.179 at 2017-06-20 15:34:49 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 433ms (Views: 401.5ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/blogs" for 10.240.0.69 at 2017-06-20 15:34:52 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (165.9ms)
+Completed 200 OK in 228ms (Views: 225.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs/asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae/edit" for 10.240.0.186 at 2017-06-20 15:34:55 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae"}
+  [1m[36mBlog Load (1.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae"], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (18.7ms)
+  Rendered blogs/edit.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 146ms (Views: 140.1ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/blogs/asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae" for 10.240.0.186 at 2017-06-20 15:34:58 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6NRxSiakn974o28BLwzo1aVm+a8j8KOHI4MmNU8Ou5HDM2yqxSgsStm4V9gDWLt4+LBdQryrkwCWR2dNHA5TMQ==", "blog"=>{"title"=>"1", "body"=>"asfdasdf"}, "commit"=>"Update Blog", "id"=>"asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "blogs" SET "title" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["title", "1"], ["updated_at", "2017-06-20 15:34:58.823846"], ["id", 2]]
+  [1m[35m (88.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/blogs/asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae
+Completed 302 Found in 98ms (ActiveRecord: 89.2ms)
+
+
+Started GET "/blogs/asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae" for 10.240.0.69 at 2017-06-20 15:34:58 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae"}
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae"], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 41ms (Views: 37.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs" for 10.240.0.187 at 2017-06-20 15:35:01 +0000
+Cannot render console from 10.240.0.187! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 185ms (Views: 182.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs/new" for 10.240.1.20 at 2017-06-20 15:35:06 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/_form.html.erb (2.8ms)
+  Rendered blogs/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 169ms (Views: 162.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 10.240.1.17 at 2017-06-20 15:35:09 +0000
+Cannot render console from 10.240.1.17! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 72ms (Views: 69.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs/asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae/toggle_status" for 10.240.1.20 at 2017-06-20 15:35:14 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae"}
+Started GET "/blogs/asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae/toggle_status" for 10.240.0.119 at 2017-06-20 15:38:07 +0000
+Cannot render console from 10.240.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mBlog Load (45.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 263942ms (ActiveRecord: 45.6ms)
+
+
+  
+Processing by BlogsController#toggle_status as HTML
+SystemExit (exit):
+  Parameters: {"id"=>"asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae"}
+  
+app/controllers/blogs_controller.rb:65:in `toggle_status'
+Completed 500 Internal Server Error in 1772ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+app/controllers/blogs_controller.rb:65:in `toggle_status'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (321.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (84.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (486.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (17.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (938.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (79.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (1024.9ms)
+Started GET "/blogs/asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae/toggle_status" for 10.240.0.204 at 2017-06-20 15:41:58 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae"}
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `draft?' for nil:NilClass):
+  
+app/controllers/blogs_controller.rb:64:in `toggle_status'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (311.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (69.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (25.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (480.6ms)
+Started GET "/blogs/asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae/toggle_status" for 10.240.0.179 at 2017-06-20 15:42:16 +0000
+Cannot render console from 10.240.0.179! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae"}
+Completed 500 Internal Server Error in 175ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `draft?' for nil:NilClass):
+  
+app/controllers/blogs_controller.rb:64:in `toggle_status'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (310.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (60.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (17.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (455.7ms)
+Started GET "/blogs" for 10.240.0.204 at 2017-06-20 15:42:18 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (46.8ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (313.0ms)
+Completed 200 OK in 1143ms (Views: 1039.4ms | ActiveRecord: 51.2ms)
+
+
+Started GET "/blogs/asdfasdf/toggle_status" for 10.240.1.15 at 2017-06-20 15:42:21 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"asdfasdf"}
+Completed 500 Internal Server Error in 146ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `draft?' for nil:NilClass):
+  
+app/controllers/blogs_controller.rb:64:in `toggle_status'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (320.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (71.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (475.3ms)
+Started GET "/blogs" for 10.240.1.32 at 2017-06-20 15:42:41 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (207.8ms)
+Completed 200 OK in 998ms (Views: 976.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/blogs/asdfasdf-d3f86d19-9458-438a-a1e5-6e4ffbb1548f/toggle_status" for 10.240.1.32 at 2017-06-20 15:42:44 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"asdfasdf-d3f86d19-9458-438a-a1e5-6e4ffbb1548f"}
+Completed 500 Internal Server Error in 152ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `draft?' for nil:NilClass):
+  
+app/controllers/blogs_controller.rb:64:in `toggle_status'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (359.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (69.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (517.3ms)
+Started GET "/blogs/asdfasdf-d3f86d19-9458-438a-a1e5-6e4ffbb1548f/toggle_status" for 10.240.0.241 at 2017-06-20 15:47:08 +0000
+Cannot render console from 10.240.0.241! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/home/ubuntu/workspace/devcampPortfolio/app/controllers/blogs_controller.rb:88: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/blogs_controller.rb:88: syntax error, unexpected end-of-input, expecting keyword_end
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (407.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (104.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (26.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (614.5ms)
+Started GET "/blogs/asdfasdf-d3f86d19-9458-438a-a1e5-6e4ffbb1548f/toggle_status" for 10.240.0.119 at 2017-06-20 15:47:40 +0000
+Cannot render console from 10.240.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"asdfasdf-d3f86d19-9458-438a-a1e5-6e4ffbb1548f"}
+Completed 500 Internal Server Error in 163ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `draft?' for nil:NilClass):
+  
+app/controllers/blogs_controller.rb:65:in `toggle_status'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (369.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (101.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (13.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (569.6ms)
+Started GET "/blogs/asdfasdf-d3f86d19-9458-438a-a1e5-6e4ffbb1548f/toggle_status" for 10.240.1.60 at 2017-06-20 15:48:09 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"asdfasdf-d3f86d19-9458-438a-a1e5-6e4ffbb1548f"}
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "asdfasdf-d3f86d19-9458-438a-a1e5-6e4ffbb1548f"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "blogs" SET "status" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["status", 0], ["updated_at", "2017-06-20 15:48:10.784783"], ["id", 5]]
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "blogs" SET "status" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["status", 1], ["updated_at", "2017-06-20 15:48:10.838866"], ["id", 5]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/blogs
+Completed 302 Found in 277ms (ActiveRecord: 19.0ms)
+
+
+Started GET "/blogs" for 10.240.1.64 at 2017-06-20 15:48:10 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (258.0ms)
+Completed 200 OK in 971ms (Views: 952.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/blogs/asdfasdf-2ad87c8d-aa79-4768-9739-ec0e55856eca/toggle_status" for 10.240.0.119 at 2017-06-20 15:48:13 +0000
+Cannot render console from 10.240.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"asdfasdf-2ad87c8d-aa79-4768-9739-ec0e55856eca"}
+  [1m[36mBlog Load (101.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "asdfasdf-2ad87c8d-aa79-4768-9739-ec0e55856eca"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "blogs" SET "status" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["status", 1], ["updated_at", "2017-06-20 15:48:13.539880"], ["id", 4]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "blogs" SET "status" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["status", 0], ["updated_at", "2017-06-20 15:48:13.586551"], ["id", 4]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "blogs" SET "status" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["status", 1], ["updated_at", "2017-06-20 15:48:13.652674"], ["id", 4]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/blogs
+Completed 302 Found in 317ms (ActiveRecord: 117.8ms)
+
+
+Started GET "/blogs" for 10.240.1.15 at 2017-06-20 15:48:13 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (0.9ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (177.3ms)
+Completed 200 OK in 943ms (Views: 921.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs/asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae/toggle_status" for 10.240.0.110 at 2017-06-20 15:48:18 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae"}
+  [1m[36mBlog Load (1.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "asdfasdf-86429269-6ea8-486e-9a41-eb0ad94485ae"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "blogs" SET "status" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["status", 1], ["updated_at", "2017-06-20 15:48:18.421713"], ["id", 2]]
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "blogs" SET "status" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["status", 0], ["updated_at", "2017-06-20 15:48:18.481879"], ["id", 2]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (9.0ms)[0m  [1m[33mUPDATE "blogs" SET "status" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["status", 1], ["updated_at", "2017-06-20 15:48:18.534188"], ["id", 2]]
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/blogs
+Completed 302 Found in 222ms (ActiveRecord: 26.2ms)
+
+
+Started GET "/blogs" for 10.240.0.110 at 2017-06-20 15:48:18 +0000
+Cannot render console from 10.240.0.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/application
+  [1m[36mBlog Load (1.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (185.0ms)
+Completed 200 OK in 985ms (Views: 969.9ms | ActiveRecord: 1.3ms)
+
+

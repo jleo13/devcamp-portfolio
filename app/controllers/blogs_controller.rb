@@ -59,6 +59,22 @@ class BlogsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def toggle_status
+       @blog = Blog.friendly.find(params[:id])
+      @blog.published! if @blog.draft?
+      @blog.draft! if @blog.published?
+      
+      
+      if @blog.draft?
+        @blog.published!
+        elsif  @blog.published?
+        @blog.draft!
+      end
+          
+      redirect_to blogs_url, notice: 'Status has been updated'
+  end
+  
 
   private
     # Use callbacks to share common setup or constraints between actions.
