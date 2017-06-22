@@ -4,10 +4,43 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+#   Character.create(name: 'Luke', movie: movies.fir
+
+10.times do |topic|
+ if topic < 3
+    if topic == 1
+       Topic.create!(
+    title: "Software Development"
+    )
+  end
+  if topic == 2
+      Topic.create!(
+    title: "Cinemetorgraphy and Filmaking"
+    )
+  end
+  if topic == 3 
+    Topic.create!(
+        title: "Flat design"
+       )
+     end
+   else
+     
+     Topic.create!(
+        title: "Topic #{topic}"
+       )
+       
+       puts "10 topics created"
+     end
+     
+   end
+     
+     
+    
+
 
 10.times do |blog|
-  Blog.create!(
+ t = blog
+ Blog.create!(
 
 title: "My Blog Post #{blog}",
   body: "Sed ut perspiciatis unde
@@ -29,9 +62,11 @@ title: "My Blog Post #{blog}",
    quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
    aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
    ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum
-   fugiat quo voluptas nulla pariatu"
+   fugiat quo voluptas nulla pariatu",
+ topic_id: Topic.last.id
 
-   )
+
+)
   end
   puts "10 blog posts created"
 
@@ -59,4 +94,34 @@ w who you are without posting an image of yourself.",
 
   end
 
+
+
+1.times do |portfolio_item|
+  Portfolio.create!(
+    title: "Portfolio title: #{portfolio_item}",
+    subtitle: "Ruby on Rails ",
+    body:" An Avatar is an iconic portrait
+used to represent yourself.
+Usually shown without any eyes
+, they are a simple and effective way to sho
+w who you are without posting an image of yourself.",
+    main_image: "http://via.placeholder.com/600x400" ,
+    thumb_image: "http://via.placeholder.com/350x200"
+    )
+
+  end
+
+
 puts "9 portfolio items created"
+
+
+3.times do |technology|
+
+    Portfolio.last.technologies.create!(
+          name: "Technology #{technology}",
+      )
+end
+
+
+
+puts "3 portfolio items created"
