@@ -7083,3 +7083,4 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 95ms (Views: 89.4ms | ActiveRecord: 3.6ms)
 
 
+  [1m[35mSQL (4.1ms)[0m  [1m[33mUPDATE "users" SET "name" = 'Jack Leonard'[0m
