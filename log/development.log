@@ -7489,3 +7489,33 @@ Processing by PortfoliosController#index as HTML
 Completed 200 OK in 152ms (Views: 118.5ms | ActiveRecord: 8.3ms)
 
 
+Started GET "/portfolios" for 10.240.0.119 at 2017-06-28 15:52:52 +0000
+Cannot render console from 10.240.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.8ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered portfolios/index.html.erb within layouts/portfolio (16.2ms)
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 72ms (Views: 68.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs" for 10.240.1.60 at 2017-06-28 15:53:04 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.8ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (24.4ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 88ms (Views: 62.0ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/blogs" for 10.240.1.60 at 2017-06-28 15:53:04 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (11.8ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 54ms (Views: 51.2ms | ActiveRecord: 0.5ms)
+
+
