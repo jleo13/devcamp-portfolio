@@ -9030,3 +9030,153 @@ Processing by PortfoliosController#index as HTML
 Completed 200 OK in 75ms (Views: 72.6ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/portfolios" for 10.240.0.204 at 2017-06-29 16:46:58 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (1.9ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (21.7ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (124.9ms)
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 386ms (Views: 381.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/blogs" for 10.240.0.182 at 2017-06-29 16:47:00 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.8ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (14.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (91.3ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 179ms (Views: 174.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs" for 10.240.0.204 at 2017-06-29 16:47:00 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.9ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (13.6ms)
+  Rendered blogs/index.html.erb within layouts/blog (18.0ms)
+  Rendered shared/_nav.html.erb (1.5ms)
+Completed 200 OK in 76ms (Views: 72.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs" for 10.240.1.20 at 2017-06-29 16:49:44 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (30.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (34.6ms)
+  Rendered shared/_nav.html.erb (1.2ms)
+Completed 200 OK in 130ms (Views: 126.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs" for 10.240.1.32 at 2017-06-29 16:50:21 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (1.3ms)
+  Rendered blogs/index.html.erb within layouts/blog (25.1ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.5ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/devcampPortfolio/app/views/blogs/_blog.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting ')'
+(blog.created_at, Time.now)ago );@output_buffer.safe_append=
+                              ^):
+  
+app/views/blogs/_blog.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/blogs/index.html.erb:16:in `_app_views_blogs_index_html_erb__607717038083548909_70179040974120'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.0ms)
+Started GET "/blogs" for 10.240.0.204 at 2017-06-29 16:50:51 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (18.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (23.1ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 218ms (Views: 215.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/contact" for 10.240.1.17 at 2017-06-29 16:53:32 +0000
+Cannot render console from 10.240.1.17! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (25.4ms)
+  Rendered shared/_nav.html.erb (1.2ms)
+Completed 200 OK in 203ms (Views: 196.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 10.240.1.17 at 2017-06-29 16:53:32 +0000
+Cannot render console from 10.240.1.17! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (0.9ms)
+  Rendered shared/_nav.html.erb (1.6ms)
+Completed 200 OK in 120ms (Views: 113.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 10.240.1.60 at 2017-06-29 16:55:03 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (15.8ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 65ms (Views: 63.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 10.240.1.20 at 2017-06-29 16:55:29 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (2.9ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 191ms (Views: 189.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 10.240.1.20 at 2017-06-29 16:58:21 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (212.1ms)
+Completed 500 Internal Server Error in 217ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `number_with_delimeter' for #<#<Class:0x000000035f2820>:0x007fa7a86f5480>
+Did you mean?  number_with_delimiter):
+    2: <p><%= number_to_phone "5555555555" %></p>
+    3: <p><%= number_to_currency "5555555555" %></p>
+    4: 
+    5: <p><%= number_with_delimeter "5555555555" %></p>
+  
+app/views/pages/contact.html.erb:5:in `_app_views_pages_contact_html_erb__1281195150812152998_70179031070420'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.2ms)
+Started GET "/contact" for 10.240.1.17 at 2017-06-29 16:58:39 +0000
+Cannot render console from 10.240.1.17! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (1.1ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
