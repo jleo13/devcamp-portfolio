@@ -9180,3 +9180,911 @@ Processing by PagesController#contact as HTML
 Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 10.240.1.19 at 2017-07-05 14:15:28 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (5.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (16.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (5.9ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (91.0ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 513ms (Views: 423.2ms | ActiveRecord: 39.1ms)
+
+
+Started GET "/blogs" for 10.240.1.19 at 2017-07-05 14:19:23 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.8ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 2]]
+  Rendered collection of blogs/_blog.html.erb [2 times] (27.2ms)
+  Rendered blogs/index.html.erb within layouts/blog (43.1ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 112ms (Views: 90.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/blogs" for 10.240.1.19 at 2017-07-05 14:19:23 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (2.9ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 2]]
+  Rendered collection of blogs/_blog.html.erb [2 times] (3.4ms)
+  Rendered blogs/index.html.erb within layouts/blog (9.0ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 44ms (Views: 38.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/blogs" for 10.240.0.182 at 2017-07-05 14:20:56 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 2]]
+  Rendered collection of blogs/_blog.html.erb [2 times] (6.2ms)
+  Rendered blogs/index.html.erb within layouts/blog (40.1ms)
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 138ms (Views: 113.3ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/blogs" for 10.240.1.15 at 2017-07-05 14:22:04 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 2]]
+  Rendered collection of blogs/_blog.html.erb [2 times] (4.2ms)
+  Rendered blogs/index.html.erb within layouts/blog (25.5ms)
+  Rendered shared/_nav.html.erb (1.5ms)
+Completed 200 OK in 80ms (Views: 62.4ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/blogs" for 10.240.1.32 at 2017-07-05 14:32:37 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (2.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 2]]
+  Rendered collection of blogs/_blog.html.erb [2 times] (7.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (15.9ms)
+  Rendered shared/_nav.html.erb (1.8ms)
+Completed 200 OK in 90ms (Views: 84.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/blogs" for 10.240.1.15 at 2017-07-05 14:34:30 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (21.5ms)
+  Rendered blogs/index.html.erb within layouts/blog (50.1ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 147ms (Views: 116.2ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/" for 10.240.0.186 at 2017-07-05 14:34:45 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.5ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (23.7ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 116ms (Views: 90.8ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 10.240.0.182 at 2017-07-05 14:34:50 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (33.0ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 89ms (Views: 64.0ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/" for 10.240.1.15 at 2017-07-05 14:34:59 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.5ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (8.9ms)
+  Rendered shared/_nav.html.erb (1.6ms)
+Completed 200 OK in 51ms (Views: 48.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs" for 10.240.1.17 at 2017-07-05 14:35:00 +0000
+Cannot render console from 10.240.1.17! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendering blogs/index.html.erb within layouts/blog
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.4ms)
+  Rendered blogs/index.html.erb within layouts/blog (10.2ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 57ms (Views: 51.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs" for 10.240.1.15 at 2017-07-05 14:35:01 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendering blogs/index.html.erb within layouts/blog
+  Rendered collection of blogs/_blog.html.erb [10 times] (7.9ms)
+  Rendered blogs/index.html.erb within layouts/blog (9.7ms)
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 47ms (Views: 41.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 10.240.1.64 at 2017-07-05 14:39:07 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.8ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+Started GET "/blogs" for 10.240.1.20 at 2017-07-05 14:40:56 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Rendering blogs/index.html.erb within layouts/blog
+  Rendered collection of blogs/_blog.html.erb [10 times] (10.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (13.4ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 108502ms (Views: 55.3ms | ActiveRecord: 4.2ms)
+
+
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by BlogsController#index as HTML
+Started GET "/" for 10.240.1.60 at 2017-07-05 14:44:08 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" for 10.240.0.119 at 2017-07-05 14:44:08 +0000
+Started GET "/" for 10.240.0.182 at 2017-07-05 14:44:08 +0000
+Cannot render console from 10.240.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (1.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (13.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (42.9ms)
+  Rendered shared/_nav.html.erb (1.2ms)
+Completed 200 OK in 192494ms (Views: 110.8ms | ActiveRecord: 8.8ms)
+
+
+Processing by PagesController#home as HTML
+Processing by PagesController#home as HTML
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendering pages/home.html.erb within layouts/application
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (1.0ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mBlog Load (1.9ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mBlog Load (8.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (4.4ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  [1m[36mSkill Load (0.6ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  [1m[36mSkill Load (0.8ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (36.6ms)
+  Rendered pages/home.html.erb within layouts/application (39.1ms)
+  Rendered pages/home.html.erb within layouts/application (45.0ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 162ms (Views: 137.4ms | ActiveRecord: 8.7ms)
+
+
+  Rendered shared/_nav.html.erb (0.7ms)
+  Rendered shared/_nav.html.erb (0.4ms)
+Completed 200 OK in 176ms (Views: 131.7ms | ActiveRecord: 30.1ms)
+
+
+Completed 200 OK in 175ms (Views: 137.8ms | ActiveRecord: 26.5ms)
+
+
+Started GET "/blogs" for 10.240.0.182 at 2017-07-05 14:44:18 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (13.2ms)
+  Rendered blogs/index.html.erb within layouts/blog (61.4ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 132ms (Views: 95.6ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/blogs" for 10.240.0.119 at 2017-07-05 14:44:18 +0000
+Cannot render console from 10.240.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.9ms)
+  Rendered blogs/index.html.erb within layouts/blog (13.0ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs?r=facebook" for 10.240.0.204 at 2017-07-05 14:44:50 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Parameters: {"r"=>"facebook"}
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (13.4ms)
+  Rendered blogs/index.html.erb within layouts/blog (17.6ms)
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 151ms (Views: 148.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs" for 10.240.1.60 at 2017-07-05 14:46:20 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (11.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (15.5ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 52ms (Views: 49.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs" for 10.240.1.64 at 2017-07-05 14:46:34 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (1.0ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (13.7ms)
+  Rendered shared/_nav.html.erb (1.7ms)
+Completed 200 OK in 200ms (Views: 196.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs?q=f" for 10.240.0.69 at 2017-07-05 14:46:43 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Parameters: {"q"=>"f"}
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (11.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (15.0ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 121ms (Views: 118.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs" for 10.240.0.69 at 2017-07-05 14:51:26 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (13.8ms)
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 114ms (Views: 111.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs" for 10.240.1.64 at 2017-07-05 14:57:33 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (17.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (43.3ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 106ms (Views: 82.0ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/portfolios" for 10.240.0.204 at 2017-07-05 14:57:36 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (9.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (5.0ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (39.6ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 109ms (Views: 69.1ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/portfolios" for 10.240.1.19 at 2017-07-05 14:57:37 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.9ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (7.3ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (12.5ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 53ms (Views: 50.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/portfolio/4" for 10.240.0.204 at 2017-07-05 14:57:53 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  Rendered portfolios/show.html.erb within layouts/portfolio (8.1ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `main_image' for nil:NilClass):
+    1: <%= image_tag @portfolio_item.main_image %>
+    2: 
+    3: <h1> <%= @portfolio_item.title %>  </h1>
+    4: 
+  
+app/views/portfolios/show.html.erb:1:in `_app_views_portfolios_show_html_erb__339313862980508576_70022530370540'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (41.8ms)
+Started GET "/portfolio/4" for 10.240.1.64 at 2017-07-05 15:00:07 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  Rendered portfolios/show.html.erb within layouts/portfolio (3.6ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `pry' for #<Binding:0x0000000536d918>
+Did you mean?  try):
+    1: <% binding.pry %>
+    2: <%= image_tag @portfolio_item.main_image %>
+    3: 
+    4: <h1> <%= @portfolio_item.title %>  </h1>
+  
+app/views/portfolios/show.html.erb:1:in `_app_views_portfolios_show_html_erb__339313862980508576_70022566706620'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.8ms)
+Started GET "/portfolio/4" for 10.240.0.182 at 2017-07-05 15:01:42 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  Rendered portfolios/show.html.erb within layouts/portfolio (3.4ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `pry' for #<Binding:0x007f5ecd661e48>
+Did you mean?  try):
+    1: <% binding.pry %>
+    2: <%= image_tag @portfolio_item.main_image %>
+    3: 
+    4: <h1> <%= @portfolio_item.title %>  </h1>
+  
+app/views/portfolios/show.html.erb:1:in `_app_views_portfolios_show_html_erb__339313862980508576_70022575069260'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.9ms)
+Started GET "/portfolios" for 10.240.1.19 at 2017-07-05 15:02:14 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.9ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (7.4ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (29.9ms)
+  Rendered shared/_nav.html.erb (1.5ms)
+Completed 200 OK in 104ms (Views: 79.9ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/portfolios" for 10.240.1.19 at 2017-07-05 15:02:15 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (5.7ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (10.4ms)
+  Rendered shared/_nav.html.erb (1.6ms)
+Completed 200 OK in 71ms (Views: 68.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/portfolio/4" for 10.240.1.19 at 2017-07-05 15:02:18 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  Rendered portfolios/show.html.erb within layouts/portfolio (3.1ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `pry' for #<Binding:0x007f5ebc08dbb8>
+Did you mean?  try):
+    1: <% binding.pry %>
+    2: <%= image_tag @portfolio_item.main_image %>
+    3: 
+    4: <h1> <%= @portfolio_item.title %>  </h1>
+  
+app/views/portfolios/show.html.erb:1:in `_app_views_portfolios_show_html_erb__339313862980508576_70022429215420'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.2ms)
+Started GET "/portfolio/4" for 10.240.1.64 at 2017-07-05 15:13:29 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  Rendered portfolios/show.html.erb within layouts/portfolio (3.5ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `main_image' for nil:NilClass):
+    1: 
+    2: <%= image_tag @portfolio_item.main_image %>
+    3: 
+    4: <h1> <%= @portfolio_item.title %>  </h1>
+    5: 
+  
+app/views/portfolios/show.html.erb:2:in `_app_views_portfolios_show_html_erb__339313862980508576_70022429074200'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (45.1ms)
+Started GET "/portfolio/4" for 10.240.1.15 at 2017-07-05 15:15:03 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  Rendered portfolios/show.html.erb within layouts/portfolio (3.5ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `pry' for #<Binding:0x007f5ec8190928>
+Did you mean?  try):
+    1: <% binding.pry %>
+    2: <%= image_tag @portfolio_item.main_image %>
+    3: 
+    4: <h1> <%= @portfolio_item.title %>  </h1>
+  
+app/views/portfolios/show.html.erb:1:in `_app_views_portfolios_show_html_erb__339313862980508576_70022734292520'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.1ms)
+Started GET "/portfolio/4" for 10.240.1.60 at 2017-07-05 15:15:05 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  Rendered portfolios/show.html.erb within layouts/portfolio (6.0ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `pry' for #<Binding:0x00000004e34d48>
+Did you mean?  try):
+    1: <% binding.pry %>
+    2: <%= image_tag @portfolio_item.main_image %>
+    3: 
+    4: <h1> <%= @portfolio_item.title %>  </h1>
+  
+app/views/portfolios/show.html.erb:1:in `_app_views_portfolios_show_html_erb__339313862980508576_42316300'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.1ms)
+Started GET "/portfolio/4" for 10.240.1.60 at 2017-07-05 15:15:06 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  Rendered portfolios/show.html.erb within layouts/portfolio (6.1ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `pry' for #<Binding:0x007f5ecceac0b8>
+Did you mean?  try):
+    1: <% binding.pry %>
+    2: <%= image_tag @portfolio_item.main_image %>
+    3: 
+    4: <h1> <%= @portfolio_item.title %>  </h1>
+  
+app/views/portfolios/show.html.erb:1:in `_app_views_portfolios_show_html_erb__339313862980508576_70022570961520'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.2ms)
+Started GET "/portfolio/4" for 10.240.0.119 at 2017-07-05 15:15:07 +0000
+Cannot render console from 10.240.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  Rendered portfolios/show.html.erb within layouts/portfolio (3.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `pry' for #<Binding:0x007f5ecd937320>
+Did you mean?  try):
+    1: <% binding.pry %>
+    2: <%= image_tag @portfolio_item.main_image %>
+    3: 
+    4: <h1> <%= @portfolio_item.title %>  </h1>
+  
+app/views/portfolios/show.html.erb:1:in `_app_views_portfolios_show_html_erb__339313862980508576_70022733643040'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (39.0ms)
+Started GET "/portfolio/4" for 10.240.1.15 at 2017-07-05 15:15:09 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  Rendered portfolios/show.html.erb within layouts/portfolio (3.4ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `pry' for #<Binding:0x007f5ecddde0b8>
+Did you mean?  try):
+    1: <% binding.pry %>
+    2: <%= image_tag @portfolio_item.main_image %>
+    3: 
+    4: <h1> <%= @portfolio_item.title %>  </h1>
+  
+app/views/portfolios/show.html.erb:1:in `_app_views_portfolios_show_html_erb__339313862980508576_70022733968600'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.9ms)
+Started GET "/portfolio/4" for 10.240.1.15 at 2017-07-05 15:15:10 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  Rendered portfolios/show.html.erb within layouts/portfolio (3.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `pry' for #<Binding:0x007f5ec40ec2c8>
+Did you mean?  try):
+    1: <% binding.pry %>
+    2: <%= image_tag @portfolio_item.main_image %>
+    3: 
+    4: <h1> <%= @portfolio_item.title %>  </h1>
+  
+app/views/portfolios/show.html.erb:1:in `_app_views_portfolios_show_html_erb__339313862980508576_70022496505560'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.6ms)
+Started GET "/portfolio/4" for 10.240.1.20 at 2017-07-05 15:15:11 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  Rendered portfolios/show.html.erb within layouts/portfolio (3.7ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `pry' for #<Binding:0x007f5ec445cf48>
+Did you mean?  try):
+    1: <% binding.pry %>
+    2: <%= image_tag @portfolio_item.main_image %>
+    3: 
+    4: <h1> <%= @portfolio_item.title %>  </h1>
+  
+app/views/portfolios/show.html.erb:1:in `_app_views_portfolios_show_html_erb__339313862980508576_70022498353660'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.6ms)
+Started GET "/portfolio/" for 10.240.0.182 at 2017-07-05 15:17:59 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/portfolio"):
+  
+actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered collection of /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [36 times] (105.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (37.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (198.4ms)
+Started GET "/" for 10.240.0.69 at 2017-07-05 15:18:06 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (130.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.5ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (174.8ms)
+  Rendered shared/_nav.html.erb (1.2ms)
+Completed 200 OK in 290ms (Views: 119.5ms | ActiveRecord: 134.5ms)
+
+
+Started GET "/portfolios" for 10.240.1.15 at 2017-07-05 15:18:08 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.7ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (7.5ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (26.8ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 83ms (Views: 68.6ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/portfolios" for 10.240.1.20 at 2017-07-05 15:18:09 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (6.8ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (10.7ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 58ms (Views: 54.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/portfolio/4" for 10.240.1.17 at 2017-07-05 15:18:11 +0000
+Cannot render console from 10.240.1.17! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  Rendered portfolios/show.html.erb within layouts/portfolio (2.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `pry' for #<Binding:0x007f5ec8103e88>
+Did you mean?  try):
+    1: <% binding.pry %>
+    2: <%= image_tag @portfolio_item.main_image %>
+    3: 
+    4: <h1> <%= @portfolio_item.title %>  </h1>
+  
+app/views/portfolios/show.html.erb:1:in `_app_views_portfolios_show_html_erb__339313862980508576_70022530130240'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (16.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.6ms)
+Started GET "/portfolio/4" for 10.240.0.186 at 2017-07-05 15:23:30 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  Rendered portfolios/show.html.erb within layouts/portfolio (476469.1ms)
+Completed 500 Internal Server Error in 476494ms (ActiveRecord: 0.0ms)
+
+
+  
+Started GET "/portfolio/4" for 10.240.1.19 at 2017-07-05 15:31:38 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPortfolio Load (3.3ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (6.3ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = $1[0m  [["portfolio_id", 4]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (43.4ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 638ms (Views: 548.8ms | ActiveRecord: 16.4ms)
+
+
+Started GET "/portfolios" for 10.240.1.20 at 2017-07-05 15:31:41 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (6.7ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (12.4ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 144ms (Views: 139.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/portfolios" for 10.240.0.69 at 2017-07-05 15:43:52 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (8.3ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (32.8ms)
+  Rendered shared/_nav.html.erb (1.6ms)
+Completed 200 OK in 211ms (Views: 77.8ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/portfolios" for 10.240.1.60 at 2017-07-05 15:43:55 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (29.6ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (33.5ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 78ms (Views: 75.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/portfolios" for 10.240.1.17 at 2017-07-05 15:44:14 +0000
+Cannot render console from 10.240.1.17! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (3.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (7.0ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (34.4ms)
+  Rendered shared/_nav.html.erb (1.6ms)
+Completed 200 OK in 97ms (Views: 70.4ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/portfolios" for 10.240.1.15 at 2017-07-05 15:44:59 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (5.8ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (26.9ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 97ms (Views: 70.4ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/portfolios" for 10.240.1.20 at 2017-07-05 15:45:38 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (1.0ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (8.3ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (44.2ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 586ms (Views: 541.7ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/blogs" for 10.240.1.15 at 2017-07-05 15:45:51 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (2.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "blogs" LIMIT $1) subquery_for_count[0m  [["LIMIT", 2]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "blogs" LIMIT $1) subquery_for_count[0m  [["LIMIT", 2]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 2]]
+  Rendered collection of blogs/_blog.html.erb [2 times] (23.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (28.1ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 187415ms (Views: 66.1ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/blogs" for 10.240.1.15 at 2017-07-05 15:49:05 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (2.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1[0m  [["LIMIT", 2]]
+  Rendered collection of blogs/_blog.html.erb [2 times] (5.3ms)
+  Rendered blogs/index.html.erb within layouts/blog (30.3ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 97ms (Views: 72.9ms | ActiveRecord: 7.0ms)
+
+
