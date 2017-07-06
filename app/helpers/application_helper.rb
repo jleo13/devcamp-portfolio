@@ -21,6 +21,15 @@ content_tag(:div, "My content", class: "My class")
   content_tag(:p, greeting, class: "source-greeting")
     end
   end
+ 
+ 
+ 
+  def copyright_generator
+  
+
+JackLeonardViewTool::Renderer.copyright 'Jack Leonard', 'All rights reserved'
+  end
+
   
   
 end

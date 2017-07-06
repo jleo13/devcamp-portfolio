@@ -59,3 +59,5 @@ gem 'devise', '~> 4.3'
 
 
 gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
+
+gem 'jack_leonard_view_tool', '~> 0.1.0'
