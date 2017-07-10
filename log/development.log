@@ -10771,3 +10771,1026 @@ Migrating to AddRolesToUsers (20170706165857)
   [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5860861906129790490)[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/about" for 10.240.0.119 at 2017-07-06 17:41:43 +0000
+Cannot render console from 10.240.0.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+NoMethodError (undefined method `petergate' for #<Class:0x007fb758dcc668>):
+  
+app/models/user.rb:7:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+config/routes.rb:2:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.9ms)
+Started GET "/about" for 10.240.1.32 at 2017-07-06 17:43:53 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (1.8ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 648ms (Views: 628.3ms | ActiveRecord: 4.0ms)
+
+
+Started DELETE "/logout" for 10.240.1.60 at 2017-07-06 17:43:58 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0yukywAg+IVKisSa9hZDdZAiiGCfJrkLRzTEoJa84fjtnUwLhOf/kg1ciLxrmHSZHGcoWYFQaUpcnnFNZJT7Zw=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 24ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.1.60 at 2017-07-06 17:43:58 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (2.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.7ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (46.0ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 216ms (Views: 166.9ms | ActiveRecord: 10.1ms)
+
+
+Started DELETE "/logout" for 10.240.0.182 at 2017-07-06 17:44:01 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"sDNXZPED5wAPgon16zPg5EuVBe0uSDIeNeUQCLq5uOmOhb+kdcTgF0hUxdN2vdcIx9Cl1DA+4l8uT6XlSJGidg=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.1.60 at 2017-07-06 17:44:01 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (12.1ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 95ms (Views: 91.6ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/logout" for 10.240.0.182 at 2017-07-06 17:44:02 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/RIPSfmAE1c/WFwbdWqS/9c0bpdGPAS/52/7lrO/IAfDpOeJfUcUQHiOED3o5KUTW3HOrlhK1P78xU57QZc6mA=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.1.15 at 2017-07-06 17:44:02 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (8.9ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 133ms (Views: 129.6ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/logout" for 10.240.1.60 at 2017-07-06 17:44:03 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+FouiiJV+ae5sV9AMQT93h/DuAQ2Gu3qSfNpihQ0vxbG7MZKppL+sP5nE2asisoyk4YYPShsPatSWdxn5hyliQ=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.182 at 2017-07-06 17:44:03 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (11.3ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 116ms (Views: 113.6ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/logout" for 10.240.0.69 at 2017-07-06 17:44:03 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mVs3zmREsE+W6Esru56QnNo+CVqP/CGQif44z7gEQOCn7d8O4IO3WNE+Bw0mEKdwVnupY5GK8dGSVI0iSixafw=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.1.15 at 2017-07-06 17:44:03 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (7.9ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 145ms (Views: 142.4ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/logout" for 10.240.1.60 at 2017-07-06 17:44:04 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"q/Cmo29df4Vhs6qd9fTo5tGjoRpQ8LbFv3BxIZyxbTiVRk5j65p4kiZl5rtoet8KXeYBI06GZoSk2sTMbpl3pw=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.182 at 2017-07-06 17:44:04 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.2ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (9.9ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 104ms (Views: 101.5ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/logout" for 10.240.0.182 at 2017-07-06 17:44:05 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yODLL7oMF7ejbaMSFof6kV64dyfTFyPzroPY1pIno9n2ViPvPssQoOS77zSLCc190v3XHs1h87K1KW07YA+5Rg=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.1.15 at 2017-07-06 17:44:05 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (48.8ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.6ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (60.8ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 163ms (Views: 111.1ms | ActiveRecord: 49.4ms)
+
+
+Started DELETE "/logout" for 10.240.0.204 at 2017-07-06 17:44:05 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/r3OT7Qvd4o+Z2PNYsYXwcoak78Dk2WgOmpM++k/8b/ACyaPMOhwnXmxL+v/SCAtRl8zhh3lteEhwPkWGxfrIA=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.182 at 2017-07-06 17:44:05 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.2ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (8.3ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 97ms (Views: 94.3ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/logout" for 10.240.0.182 at 2017-07-06 17:44:06 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"IKL5Blv61OyOtWm9Z7uZ8TAWFtTLseF8CC+w+v7Ti28eFBHG3z3T+8ljJZv6Na4dvFO27dXHMT0ThQUXDPuR8A=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.69 at 2017-07-06 17:44:06 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.2ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (7.6ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 223ms (Views: 220.8ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/logout" for 10.240.1.60 at 2017-07-06 17:44:07 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Qyhmldd4N/BWMXSSrxzFR4c5iyUi7GLeqi2lwfXOQA19no5VU78w5xHnOLQykvKrC3wrHDyasp+xhxAsB+Zakg=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.1.60 at 2017-07-06 17:44:07 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (7.4ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 99ms (Views: 97.4ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/logout" for 10.240.0.204 at 2017-07-06 17:44:09 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GRgr6d4J2RNCe6R1IqqiHAMJM7nAYGFasD5icik39hcnrsMpWs7eBAWt6FO/JJXwj0yTgN4WsRurlNef2x/siA=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.1.15 at 2017-07-06 17:44:09 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.2ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (7.7ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 90ms (Views: 88.2ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/logout" for 10.240.1.60 at 2017-07-06 17:44:09 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5PahpDcGFvPRVqhLmvMMVOj5nKhjFczcA6g4/SeKpnbaQElks8ER5JaA5G0HfTu4ZLw8kX1jHJ0YAo0Q1aK86Q=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.204 at 2017-07-06 17:44:09 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (8.1ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 84ms (Views: 81.5ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/logout" for 10.240.0.182 at 2017-07-06 17:44:10 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"39MLRR7t6NGEDJUKhzM7ld1LG23fj7aSfeVL4kHYE93hZeOFmirvxsPa2SwavQx5UQ67VMH5ZtNmT/4Ps/AJQg=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.69 at 2017-07-06 17:44:10 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (8.5ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 100ms (Views: 97.9ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/logout" for 10.240.0.204 at 2017-07-06 17:44:31 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GU/A1MYtejBsTAXg0tdEJZKPCiqZVxPEHRZEx4NUKwMn+SgUQup9JyuaScZPWXPJHsqqE4chw4UGvPEqcXwxnA=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.186 at 2017-07-06 17:44:31 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (11.5ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 109ms (Views: 106.3ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/logout" for 10.240.0.69 at 2017-07-06 17:44:32 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BeiijKo2OK31eAKWd8xVKWlmZfcZSzRfCpBLlKKYOJs7XkpMLvE/urKuTrDqQmLF5SPFzgc95B4ROv55ULAiBA=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.204 at 2017-07-06 17:44:32 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.5ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (9.2ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 241ms (Views: 238.6ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/logout" for 10.240.0.186 at 2017-07-06 17:44:33 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"moMY5s9dvL53ptBHZu8tS5xIgUWrwmXK5eetYmS97RWkNfAmS5q7qTBwnGH7YRqnEA0hfLW0tYv+TRiPlpX3ig=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.204 at 2017-07-06 17:44:33 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (12.1ms)
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 112ms (Views: 108.8ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/logout" for 10.240.0.186 at 2017-07-06 17:44:35 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VmMCtDeIeABmcHJ4MJFGAicvKHGK+V4WrQUGOj3zRvto1ep0s09/FyGmPl6tH3Huq2qISJSPjle2r7PXz9tcZA=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.204 at 2017-07-06 17:44:35 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (8.2ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 87ms (Views: 84.9ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/logout" for 10.240.0.186 at 2017-07-06 17:44:35 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7LtObyPdl5BQqKk7AqqUh18hR5fp5LsJZdGxmit1OoPSDaavpxqQhxd+5R2fJKNr02TnrveSa0h+ewR32V0gHA=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.204 at 2017-07-06 17:44:35 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.2ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (8.1ms)
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 94ms (Views: 92.3ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/logout" for 10.240.1.32 at 2017-07-06 17:44:36 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fGklAjou7gKn7hy9bNnMt/bQynD4TuLFY9GX1HNbDyFC383CvunpFeA4UJvxV/tbepVqSeY4MoR4eyI5gXMVvg=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.1.32 at 2017-07-06 17:44:36 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (100.8ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (110.6ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 205ms (Views: 102.2ms | ActiveRecord: 101.1ms)
+
+
+Started DELETE "/logout" for 10.240.1.32 at 2017-07-06 17:44:37 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zqfHBIvfhb8QGPw5dCeQWRFcSghIwL59IhVV+iBY/yLwES/EDxiCqFfOsB/pqae1nRnqMVa2bjw5v+AX0nDlvQ=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.204 at 2017-07-06 17:44:37 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (29.5ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (40.6ms)
+  Rendered shared/_nav.html.erb (1.7ms)
+Completed 200 OK in 138ms (Views: 105.6ms | ActiveRecord: 30.0ms)
+
+
+Started DELETE "/logout" for 10.240.0.204 at 2017-07-06 17:44:38 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"F/lDu126WO/LscYBmzAWyYhMlwuCGLt+BuucXKRC6YEpT6t72X1f+IxniicGviElBAk3Mpxuaz8dQSmxVmrzHg=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.204 at 2017-07-06 17:44:38 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (89.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.5ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (101.0ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 224ms (Views: 132.3ms | ActiveRecord: 89.8ms)
+
+
+Started DELETE "/logout" for 10.240.1.32 at 2017-07-06 17:44:39 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fZEjOeWrjETqE/KaYGaJbv4uUaAhe5GovXYjlVQflnpDJ8v5YWyLU63Fvrz96L6CcmvxmT8NQemm3JZ4pjeM5Q=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.204 at 2017-07-06 17:44:39 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.3ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (10.3ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 153ms (Views: 150.6ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/logout" for 10.240.1.64 at 2017-07-06 17:47:12 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rYGqahO4SApCdDZ5jm6Js+DHSKUFiPybYk7rFmbpiaCTN0Kql39PHQWiel8T4L5fbILonBv+LNp55F77lMGTPw=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.1.17 at 2017-07-06 17:47:12 +0000
+Cannot render console from 10.240.1.17! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (12.3ms)
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 123ms (Views: 120.1ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/logout" for 10.240.1.32 at 2017-07-06 17:47:13 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Q4gQ52Y/D8Qrgn7ALI5gcms5mcABt30B8o3JhonIhsh9Pvgn4vgI02xUMuaxAFee53w5+R/BrUDpJ3xre+CcVw=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.1.17 at 2017-07-06 17:47:13 +0000
+Cannot render console from 10.240.1.17! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (120.9ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 228ms (Views: 225.5ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/logout" for 10.240.0.204 at 2017-07-06 17:47:14 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4ENeeRUG1/QLcZ+tfGBHoRTFCWmCYc5s/5EMJU33lgTe9ba5kcHQ40yn04vh7nBNmICpUJwXHi3kO7nIv9+Mmw=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.1.32 at 2017-07-06 17:47:14 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.8ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (35.6ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 140ms (Views: 137.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 10.240.1.60 at 2017-07-06 17:49:20 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (1.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.5ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (187.2ms)
+  Rendered shared/_nav.html.erb (1.6ms)
+Completed 200 OK in 321ms (Views: 283.5ms | ActiveRecord: 14.2ms)
+
+
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "roles" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["roles", "site_admin"], ["updated_at", "2017-07-06 17:56:38.861591"], ["id", 1]]
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for 10.240.1.64 at 2017-07-10 18:02:23 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+PG::ConnectionBad (could not connect to server: Connection refused
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+):
+  
+pg (0.20.0) lib/pg.rb:56:in `initialize'
+pg (0.20.0) lib/pg.rb:56:in `new'
+pg (0.20.0) lib/pg.rb:56:in `connect'
+activerecord (5.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+activerecord (5.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+activerecord (5.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+activerecord (5.0.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (5.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.3) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.3) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.3) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.3) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.3) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.3) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.3) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.3) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (42.7ms)
+Started GET "/" for 10.240.1.64 at 2017-07-10 18:04:01 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (4.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mBlog Load (16.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (6.4ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (132.4ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 821ms (Views: 726.1ms | ActiveRecord: 44.4ms)
+
+
+Started GET "/register" for 10.240.1.20 at 2017-07-10 18:04:24 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (47.1ms)
+  Rendered shared/_nav.html.erb (1.5ms)
+Completed 200 OK in 161ms (Views: 157.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 10.240.0.182 at 2017-07-10 18:04:42 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K+80lrfTfFh8K1ekremVndETwC6QwjDM6VUjIYk+fY5IccHockoy4RLmGdffL2EtoWPr6Y9PGKBfj0G7a7mlOg==", "user"=>{"email"=>"test@test.com", "name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (7.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.2ms)
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 240ms (Views: 81.6ms | ActiveRecord: 8.1ms)
+
+
+Started POST "/" for 10.240.1.32 at 2017-07-10 18:04:43 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oaVeOZpbgaJXZsVBiDmMYRZJ38mW5j3Mxvrk+VbfAu3CO6tHX8LPGzmrizL6/3jRZjn0DolrFaBwIIZjtFjaWQ==", "user"=>{"email"=>"test@test.com", "name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.7ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 89ms (Views: 79.1ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/" for 10.240.0.182 at 2017-07-10 18:04:43 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DwgARaVg+CTShZk1qhQUkkuRG0ZY70wjIVeaZy8gr1pslvU7YPm2nbxI10bY0uAiO+EwgUdiZE+Xjfj9zad37g==", "user"=>{"email"=>"test@test.com", "name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.3ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 103ms (Views: 92.7ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/" for 10.240.1.60 at 2017-07-10 18:05:28 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zx42SsEHdYTHBeJXKisbosZ3L5rNSukKoqGV97WbTtesgMM0BJ47PanIrCRY7e8StgcEXdLHwWYUe/dtVxyWYw==", "user"=>{"email"=>"example1@example.com", "name"=>"John Appleseed", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "example1@example.com"], ["LIMIT", 1]]
+  [1m[35mSQL (10.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "name", "created_at", "updated_at", "roles") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "example1@example.com"], ["encrypted_password", "$2a$11$FLfIy6ZGF1KCiOQqWFKvHOEqvueTRLK606ToJ1g0FdVJUagatbB1C"], ["name", "John Appleseed"], ["created_at", "2017-07-10 18:05:28.846416"], ["updated_at", "2017-07-10 18:05:28.846416"], ["roles", "user"]]
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-07-10 18:05:28.865272"], ["last_sign_in_at", "2017-07-10 18:05:28.865272"], ["current_sign_in_ip", "10.240.1.60/32"], ["last_sign_in_ip", "10.240.1.60/32"], ["updated_at", "2017-07-10 18:05:28.866417"], ["id", 7]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Completed 302 Found in 205ms (ActiveRecord: 21.3ms)
+
+
+Started GET "/" for 10.240.1.32 at 2017-07-10 18:05:28 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mBlog Load (0.8ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  [1m[36mSkill Load (0.4ms)[0m  [1m[34mSELECT "skills".* FROM "skills"[0m
+  Rendered pages/home.html.erb within layouts/application (10.7ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 84ms (Views: 80.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/portfolios" for 10.240.0.204 at 2017-07-10 18:05:35 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (3.8ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (4.7ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (26.4ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 240ms (Views: 216.5ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/portfolios" for 10.240.0.204 at 2017-07-10 18:05:35 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.7ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (4.5ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (8.4ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 76ms (Views: 72.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/portfolios/4/edit" for 10.240.0.182 at 2017-07-10 18:05:38 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering portfolios/edit.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (17.9ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = $1[0m  [["portfolio_id", 4]]
+  Rendered portfolios/_form.html.erb (58.5ms)
+  Rendered portfolios/edit.html.erb within layouts/portfolio (61.0ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 149ms (Views: 115.7ms | ActiveRecord: 21.3ms)
+
+
+Started GET "/blogs" for 10.240.1.19 at 2017-07-10 18:05:42 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.6ms)
+  Rendered blogs/index.html.erb within layouts/blog (13.7ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 135ms (Views: 129.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/blogs" for 10.240.1.15 at 2017-07-10 18:05:42 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.6ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 80ms (Views: 76.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs/my-blog-post-0/edit" for 10.240.1.64 at 2017-07-10 18:05:46 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"my-blog-post-0"}
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-0"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/blogs
+Filter chain halted as #<Proc:0x007f6a5c0a7b98@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs" for 10.240.1.19 at 2017-07-10 18:05:47 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (57.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (14.5ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 173ms (Views: 110.5ms | ActiveRecord: 57.9ms)
+
+
+Started GET "/blogs/my-blog-post-0/edit" for 10.240.1.64 at 2017-07-10 18:05:55 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"my-blog-post-0"}
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-0"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/blogs
+Filter chain halted as #<Proc:0x007f6a5c0a7b98@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/blogs" for 10.240.1.32 at 2017-07-10 18:05:55 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.4ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 87ms (Views: 83.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs/my-blog-post-0/edit" for 10.240.1.19 at 2017-07-10 18:07:17 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"my-blog-post-0"}
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-0"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/blogs
+Filter chain halted as #<Proc:0x007f6a5c0a7b98@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 20ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/blogs" for 10.240.1.19 at 2017-07-10 18:07:17 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (12.3ms)
+  Rendered blogs/index.html.erb within layouts/blog (15.9ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 230ms (Views: 226.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs" for 10.240.1.60 at 2017-07-10 18:29:21 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  Rendered blogs/index.html.erb within layouts/blog (9.7ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.6ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/devcampPortfolio/app/views/blogs/index.html.erb:23: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+, if logged_in?(:site_admin) );@output_buffer.safe_append='
+                              ^
+/home/ubuntu/workspace/devcampPortfolio/app/views/blogs/index.html.erb:25: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/ubuntu/workspace/devcampPortfolio/app/views/blogs/index.html.erb:27: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/blogs/index.html.erb:23: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+app/views/blogs/index.html.erb:25: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/blogs/index.html.erb:27: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (38.0ms)
+Started GET "/blogs" for 10.240.0.69 at 2017-07-10 18:30:38 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (7.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (21.2ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 138ms (Views: 132.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs" for 10.240.0.204 at 2017-07-10 18:30:46 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (7.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (9.5ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 76ms (Views: 72.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs/my-blog-post-0/toggle_status" for 10.240.1.19 at 2017-07-10 18:30:53 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"my-blog-post-0"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-0"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (7.7ms)[0m  [1m[33mUPDATE "blogs" SET "status" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["status", 1], ["updated_at", "2017-07-10 18:30:53.129625"], ["id", 1]]
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/blogs
+Completed 302 Found in 20ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/blogs" for 10.240.1.20 at 2017-07-10 18:30:53 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (8.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (12.0ms)
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 116ms (Views: 111.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs" for 10.240.0.182 at 2017-07-10 18:32:43 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (6.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (8.5ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 80ms (Views: 75.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs/my-blog-post-1" for 10.240.1.15 at 2017-07-10 19:08:59 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"my-blog-post-1"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-1"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered blogs/show.html.erb within layouts/blog (9.3ms)
+  Rendered shared/_nav.html.erb (1.5ms)
+Completed 200 OK in 339ms (Views: 247.0ms | ActiveRecord: 31.4ms)
+
+
+Started GET "/portfolios" for 10.240.1.32 at 2017-07-10 19:16:11 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (4.6ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (18.1ms)
+  Rendered shared/_nav.html.erb (1.2ms)
+Completed 200 OK in 209ms (Views: 193.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/portfolios" for 10.240.1.19 at 2017-07-10 19:16:12 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (4.4ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (7.4ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 129ms (Views: 124.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/ruby-items" for 10.240.1.32 at 2017-07-10 19:16:42 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#ruby as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering portfolios/ruby.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" WHERE "portfolios"."subtitle" = $1[0m  [["subtitle", "Ruby on Rails "]]
+  Rendered portfolios/ruby.html.erb within layouts/portfolio (2.6ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 79ms (Views: 74.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/portfolios" for 10.240.0.69 at 2017-07-10 19:18:05 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (3.2ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (6.8ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 92ms (Views: 87.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/portfolio/4" for 10.240.1.64 at 2017-07-10 19:18:15 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPortfolio Load (0.3ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.5ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = $1[0m  [["portfolio_id", 4]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (151.6ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 242ms (Views: 227.7ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/portfolio/6" for 10.240.1.32 at 2017-07-10 19:18:23 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT  "portfolios".* FROM "portfolios" WHERE "portfolios"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering portfolios/show.html.erb within layouts/portfolio
+  [1m[36mTechnology Load (0.5ms)[0m  [1m[34mSELECT "technologies".* FROM "technologies" WHERE "technologies"."portfolio_id" = $1[0m  [["portfolio_id", 6]]
+  Rendered portfolios/show.html.erb within layouts/portfolio (3.6ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 92ms (Views: 86.3ms | ActiveRecord: 1.5ms)
+
+

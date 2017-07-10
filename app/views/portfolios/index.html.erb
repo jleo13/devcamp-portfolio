@@ -2,7 +2,7 @@
 
 
 
-<%= link_to "create new item", new_portfolio_path %>
+<%= link_to "create new item", new_portfolio_path if logged_in?(:site_admin) %>
 
 
 
