@@ -11959,3 +11959,296 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 10063ms (Views: 10059.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/about" for 10.240.1.32 at 2017-07-11 23:39:11 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.6ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 243ms (Views: 240.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 10.240.0.204 at 2017-07-11 23:39:49 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.5ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 107ms (Views: 106.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 10.240.1.32 at 2017-07-11 23:39:51 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#contact as HTML
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (35.2ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 110ms (Views: 108.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 10.240.0.186 at 2017-07-11 23:55:43 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (22.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (16.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (97.8ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 216ms (Views: 148.1ms | ActiveRecord: 61.5ms)
+
+
+Started GET "/blogs" for 10.240.0.186 at 2017-07-11 23:55:44 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (22.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (26.0ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 227ms (Views: 223.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 10.240.1.15 at 2017-07-11 23:55:56 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 91ms (Views: 89.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.186 at 2017-07-11 23:55:57 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 134ms (Views: 131.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.1.19 at 2017-07-12 00:02:20 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+  Rendered shared/_nav.html.erb (1.8ms)
+Completed 200 OK in 141ms (Views: 139.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.204 at 2017-07-12 00:04:02 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+  Rendered shared/_application_nav.html.erb (1.4ms)
+Completed 200 OK in 121ms (Views: 118.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.186 at 2017-07-12 00:05:04 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+  Rendered shared/_application_nav.html.erb (2.1ms)
+Completed 200 OK in 165ms (Views: 162.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.204 at 2017-07-12 00:06:30 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+  Rendered shared/_application_nav.html.erb (5.1ms)
+Completed 500 Internal Server Error in 140ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/devcampPortfolio/app/views/shared/_application_nav.html.erb:5: syntax error, unexpected '='
+k_to "Home", root_path, class="nav-link" );@output_buffer.sa
+                              ^
+/home/ubuntu/workspace/devcampPortfolio/app/views/shared/_application_nav.html.erb:6: syntax error, unexpected '='
+"About Me", about_path, class="nav-link" );@output_buffer.sa
+                              ^
+/home/ubuntu/workspace/devcampPortfolio/app/views/shared/_application_nav.html.erb:7: syntax error, unexpected '='
+Contact", contact_path, class="nav-link" );@output_buffer.sa
+                              ^
+/home/ubuntu/workspace/devcampPortfolio/app/views/shared/_application_nav.html.erb:8: syntax error, unexpected '='
+_to "Blog", blogs_path, class="nav-link" );@output_buffer.sa
+                              ^
+/home/ubuntu/workspace/devcampPortfolio/app/views/shared/_application_nav.html.erb:9: syntax error, unexpected '='
+olio", portfolios_path, class="nav-link" );@output_buffer.sa
+                              ^):
+  
+app/views/shared/_application_nav.html.erb:5: syntax error, unexpected '='
+app/views/shared/_application_nav.html.erb:6: syntax error, unexpected '='
+app/views/shared/_application_nav.html.erb:7: syntax error, unexpected '='
+app/views/shared/_application_nav.html.erb:8: syntax error, unexpected '='
+app/views/shared/_application_nav.html.erb:9: syntax error, unexpected '='
+app/views/layouts/application.html.erb:25:in `_app_views_layouts_application_html_erb___3031969736815625446_70149947640840'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.2ms)
+Started GET "/" for 10.240.1.32 at 2017-07-12 00:06:44 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered shared/_application_nav.html.erb (1.8ms)
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/devcampPortfolio/app/views/shared/_application_nav.html.erb:5: syntax error, unexpected '='
+k_to "Home", root_path, class="nav-link" );@output_buffer.sa
+                              ^
+/home/ubuntu/workspace/devcampPortfolio/app/views/shared/_application_nav.html.erb:6: syntax error, unexpected '='
+"About Me", about_path, class="nav-link" );@output_buffer.sa
+                              ^
+/home/ubuntu/workspace/devcampPortfolio/app/views/shared/_application_nav.html.erb:7: syntax error, unexpected '='
+Contact", contact_path, class="nav-link" );@output_buffer.sa
+                              ^
+/home/ubuntu/workspace/devcampPortfolio/app/views/shared/_application_nav.html.erb:8: syntax error, unexpected '='
+_to "Blog", blogs_path, class="nav-link" );@output_buffer.sa
+                              ^
+/home/ubuntu/workspace/devcampPortfolio/app/views/shared/_application_nav.html.erb:9: syntax error, unexpected '='
+olio", portfolios_path, class="nav-link" );@output_buffer.sa
+                              ^):
+  
+app/views/shared/_application_nav.html.erb:5: syntax error, unexpected '='
+app/views/shared/_application_nav.html.erb:6: syntax error, unexpected '='
+app/views/shared/_application_nav.html.erb:7: syntax error, unexpected '='
+app/views/shared/_application_nav.html.erb:8: syntax error, unexpected '='
+app/views/shared/_application_nav.html.erb:9: syntax error, unexpected '='
+app/views/layouts/application.html.erb:25:in `_app_views_layouts_application_html_erb___3031969736815625446_70150274931860'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.5ms)
+Started GET "/" for 10.240.0.69 at 2017-07-12 00:06:51 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+  Rendered shared/_application_nav.html.erb (1.2ms)
+Completed 500 Internal Server Error in 105ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/devcampPortfolio/app/views/shared/_application_nav.html.erb:6: syntax error, unexpected ')'
+k_to "About Me", about_path, );@output_buffer.safe_append=' 
+                              ^
+/home/ubuntu/workspace/devcampPortfolio/app/views/shared/_application_nav.html.erb:14: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/ubuntu/workspace/devcampPortfolio/app/views/shared/_application_nav.html.erb:16: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/shared/_application_nav.html.erb:6: syntax error, unexpected ')'
+app/views/shared/_application_nav.html.erb:14: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/shared/_application_nav.html.erb:16: syntax error, unexpected keyword_end, expecting ')'
+app/views/layouts/application.html.erb:25:in `_app_views_layouts_application_html_erb___3031969736815625446_70149940363200'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.9ms)
+Started GET "/" for 10.240.1.64 at 2017-07-12 00:07:09 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+  Rendered shared/_application_nav.html.erb (1.7ms)
+Completed 200 OK in 167ms (Views: 165.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 10.240.1.15 at 2017-07-12 00:07:34 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (18.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (22.9ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+Completed 200 OK in 246ms (Views: 240.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs" for 10.240.0.69 at 2017-07-12 00:07:35 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (1.0ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (20.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (25.5ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+Completed 200 OK in 175ms (Views: 170.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs" for 10.240.0.182 at 2017-07-12 00:09:35 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.8ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (18.9ms)
+  Rendered blogs/index.html.erb within layouts/blog (23.8ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+Completed 200 OK in 124ms (Views: 118.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 10.240.0.182 at 2017-07-12 00:09:38 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  Rendered shared/_application_nav.html.erb (1.4ms)
+Completed 200 OK in 232ms (Views: 230.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.182 at 2017-07-12 00:09:39 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+  Rendered shared/_application_nav.html.erb (1.8ms)
+Completed 200 OK in 116ms (Views: 113.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.69 at 2017-07-12 00:10:09 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered shared/_application_nav.html.erb (1.4ms)
+Completed 200 OK in 86ms (Views: 84.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.182 at 2017-07-12 00:10:10 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+  Rendered shared/_application_nav.html.erb (1.2ms)
+Completed 200 OK in 92ms (Views: 90.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.0.69 at 2017-07-12 00:10:11 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+  Rendered shared/_application_nav.html.erb (1.3ms)
+Completed 200 OK in 91ms (Views: 89.3ms | ActiveRecord: 0.0ms)
+
+
