@@ -3,17 +3,15 @@ module ApplicationHelper
 content_tag(:div, "My content", class: "My class")
   end
   
-  def login_helper
-      
-   if current_user.is_a?(GuestUser) 
-  (link_to "Sign Up", new_user_registration_path) +
-  "<br>".html_safe +
-  ( link_to "Login", new_user_session_path)
+  def login_helper style
+    if current_user.is_a?(GuestUser) 
+  (link_to "Sign Up", new_user_registration_path, class: style) +
+  "  ".html_safe +
+  ( link_to "Login", new_user_session_path, class: style)
  
    else 
-   link_to "Logout", destroy_user_session_path, method: :delete
+   link_to "Logout", destroy_user_session_path, method: :delete, class: style
     end
- 
   end
  
  def source_helper(layout_name)
@@ -21,7 +19,7 @@ content_tag(:div, "My content", class: "My class")
    greeting = "Thanks for visiting me from  #{session[:source]} and you are on the #{layout_name} layout "
   content_tag(:p, greeting, class: "source-greeting")
     end
-  end
+ end
  
  
  
