@@ -21021,3 +21021,877 @@ puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
   Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (54.9ms)
+Started GET "/blogs/my-blog-post-1" for 10.240.0.69 at 2017-07-17 16:56:46 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"my-blog-post-1"}
+  [1m[36mBlog Load (1.1ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-1"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered blogs/show.html.erb within layouts/blog (4.6ms)
+  Rendered shared/_blog_nav.html.erb (2.0ms)
+Completed 200 OK in 247ms (Views: 236.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/blogs" for 10.240.1.19 at 2017-07-17 16:56:53 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (11.6ms)
+  Rendered blogs/index.html.erb within layouts/blog (15.7ms)
+  Rendered shared/_blog_nav.html.erb (1.2ms)
+Completed 200 OK in 105ms (Views: 98.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/blogs" for 10.240.1.64 at 2017-07-17 16:56:54 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (12.1ms)
+  Rendered shared/_blog_nav.html.erb (1.2ms)
+Completed 200 OK in 129ms (Views: 124.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs" for 10.240.0.204 at 2017-07-17 16:57:04 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (10.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (12.4ms)
+  Rendered shared/_blog_nav.html.erb (1.2ms)
+Completed 200 OK in 188ms (Views: 183.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs" for 10.240.0.204 at 2017-07-17 16:57:06 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (12.9ms)
+  Rendered blogs/index.html.erb within layouts/blog (15.8ms)
+  Rendered shared/_blog_nav.html.erb (1.2ms)
+Completed 200 OK in 99ms (Views: 94.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs" for 10.240.0.204 at 2017-07-17 16:57:07 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.9ms)
+  Rendered blogs/index.html.erb within layouts/blog (12.4ms)
+  Rendered shared/_blog_nav.html.erb (1.2ms)
+Completed 200 OK in 90ms (Views: 86.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs" for 10.240.1.19 at 2017-07-17 16:57:10 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.8ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (11.5ms)
+  Rendered blogs/index.html.erb within layouts/blog (14.7ms)
+  Rendered shared/_blog_nav.html.erb (1.2ms)
+Completed 200 OK in 228ms (Views: 223.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/blogs" for 10.240.0.186 at 2017-07-17 16:57:13 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.9ms)
+  Rendered blogs/index.html.erb within layouts/blog (12.5ms)
+  Rendered shared/_blog_nav.html.erb (1.2ms)
+Completed 200 OK in 168ms (Views: 163.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs" for 10.240.0.204 at 2017-07-17 16:57:32 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.5ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.8ms)
+  Rendered shared/_blog_nav.html.erb (1.9ms)
+Completed 200 OK in 86ms (Views: 82.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs" for 10.240.0.186 at 2017-07-17 16:57:38 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (10.6ms)
+  Rendered blogs/index.html.erb within layouts/blog (13.6ms)
+  Rendered shared/_blog_nav.html.erb (2.1ms)
+Completed 200 OK in 121ms (Views: 116.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs" for 10.240.1.20 at 2017-07-17 16:58:03 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (14.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (17.7ms)
+  Rendered shared/_blog_nav.html.erb (1.7ms)
+Completed 200 OK in 127ms (Views: 122.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/blogs" for 10.240.1.32 at 2017-07-17 17:08:36 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (13.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (16.4ms)
+  Rendered shared/_blog_nav.html.erb (1.3ms)
+  Rendered shared/_blog_masthead.html.erb (0.5ms)
+  Rendered shared/_blog_sidebar.html.erb (0.3ms)
+  Rendered shared/_blog_footer.html.erb (0.3ms)
+Completed 200 OK in 209ms (Views: 204.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs" for 10.240.1.32 at 2017-07-17 17:09:33 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (16.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (19.7ms)
+  Rendered shared/_blog_nav.html.erb (1.3ms)
+  Rendered shared/_blog_masthead.html.erb (0.7ms)
+  Rendered shared/_blog_sidebar.html.erb (0.3ms)
+  Rendered shared/_blog_footer.html.erb (0.3ms)
+Completed 200 OK in 247ms (Views: 241.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/blogs" for 10.240.0.204 at 2017-07-17 17:10:59 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (13.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (17.0ms)
+  Rendered shared/_blog_nav.html.erb (1.9ms)
+  Rendered shared/_blog_masthead.html.erb (0.9ms)
+  Rendered shared/_blog_sidebar.html.erb (0.5ms)
+  Rendered shared/_blog_footer.html.erb (0.5ms)
+Completed 200 OK in 133ms (Views: 127.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/blogs" for 10.240.0.69 at 2017-07-17 17:15:27 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (15.2ms)
+  Rendered blogs/index.html.erb within layouts/blog (19.4ms)
+Completed 500 Internal Server Error in 2565ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: flat-ui.
+Load paths:
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/config
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/images
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/javascripts
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/stylesheets
+  /home/ubuntu/workspace/devcampPortfolio/vendor/assets/javascripts
+  /home/ubuntu/workspace/devcampPortfolio/vendor/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/actioncable-5.0.3/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/popper_js-1.9.9/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/stylesheets):
+     9:     
+    10:     <meta name="keywords" content= "<%= @seokeywords %>" />
+    11: 
+    12:     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/blogs.scss:6
+app/views/layouts/blog.html.erb:12:in `_app_views_layouts_blog_html_erb__4596964857905672295_70047428657860'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (41.6ms)
+Started GET "/blogs" for 10.240.1.20 at 2017-07-17 17:19:13 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.9ms)
+  Rendered blogs/index.html.erb within layouts/blog (13.6ms)
+Completed 500 Internal Server Error in 1210ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: flat-ui.
+Load paths:
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/config
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/images
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/javascripts
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/stylesheets
+  /home/ubuntu/workspace/devcampPortfolio/vendor/assets/javascripts
+  /home/ubuntu/workspace/devcampPortfolio/vendor/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/actioncable-5.0.3/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/popper_js-1.9.9/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/stylesheets):
+     9:     
+    10:     <meta name="keywords" content= "<%= @seokeywords %>" />
+    11: 
+    12:     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/blogs.scss:6
+app/views/layouts/blog.html.erb:12:in `_app_views_layouts_blog_html_erb__4596964857905672295_70047471704860'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (45.1ms)
+Started GET "/blogs" for 10.240.0.186 at 2017-07-17 17:19:25 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (11.4ms)
+  Rendered blogs/index.html.erb within layouts/blog (14.2ms)
+Completed 500 Internal Server Error in 1010ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: flat-ui.
+Load paths:
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/config
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/images
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/javascripts
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/stylesheets
+  /home/ubuntu/workspace/devcampPortfolio/vendor/assets/javascripts
+  /home/ubuntu/workspace/devcampPortfolio/vendor/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/actioncable-5.0.3/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/popper_js-1.9.9/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/stylesheets):
+     9:     
+    10:     <meta name="keywords" content= "<%= @seokeywords %>" />
+    11: 
+    12:     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/blogs.scss:6
+app/views/layouts/blog.html.erb:12:in `_app_views_layouts_blog_html_erb__4596964857905672295_70047437352020'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.1ms)
+Started GET "/blogs" for 10.240.1.60 at 2017-07-17 17:19:32 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.3ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.7ms)
+Completed 500 Internal Server Error in 2060ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: font-awesome.
+Load paths:
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/config
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/images
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/javascripts
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/stylesheets
+  /home/ubuntu/workspace/devcampPortfolio/vendor/assets/javascripts
+  /home/ubuntu/workspace/devcampPortfolio/vendor/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/actioncable-5.0.3/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/popper_js-1.9.9/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/stylesheets):
+     9:     
+    10:     <meta name="keywords" content= "<%= @seokeywords %>" />
+    11: 
+    12:     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/blogs.scss:6
+app/views/layouts/blog.html.erb:12:in `_app_views_layouts_blog_html_erb__4596964857905672295_70047534334280'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.3ms)
+Started GET "/blogs" for 10.240.1.15 at 2017-07-17 17:21:07 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (45.2ms)
+  Rendered blogs/index.html.erb within layouts/blog (49.4ms)
+Completed 500 Internal Server Error in 1581ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: font-awesome.
+Load paths:
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/config
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/images
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/javascripts
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/stylesheets
+  /home/ubuntu/workspace/devcampPortfolio/vendor/assets/javascripts
+  /home/ubuntu/workspace/devcampPortfolio/vendor/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/actioncable-5.0.3/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/popper_js-1.9.9/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/stylesheets):
+     9:     
+    10:     <meta name="keywords" content= "<%= @seokeywords %>" />
+    11: 
+    12:     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/blogs.scss:6
+app/views/layouts/blog.html.erb:12:in `_app_views_layouts_blog_html_erb__4596964857905672295_70047508174280'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (43.7ms)
+Started GET "/blogs" for 10.240.0.186 at 2017-07-17 17:22:23 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (13.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (17.6ms)
+Completed 500 Internal Server Error in 1421ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: font-awesome.
+Load paths:
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/config
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/images
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/javascripts
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/stylesheets
+  /home/ubuntu/workspace/devcampPortfolio/vendor/assets/javascripts
+  /home/ubuntu/workspace/devcampPortfolio/vendor/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/actioncable-5.0.3/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/popper_js-1.9.9/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/stylesheets):
+     9:     
+    10:     <meta name="keywords" content= "<%= @seokeywords %>" />
+    11: 
+    12:     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/blogs.scss:6
+app/views/layouts/blog.html.erb:12:in `_app_views_layouts_blog_html_erb__4596964857905672295_70047465524340'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.8ms)
+Started GET "/blogs" for 10.240.0.186 at 2017-07-17 17:23:09 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (1.1ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (28.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (50.5ms)
+  Rendered shared/_blog_nav.html.erb (12.2ms)
+  Rendered shared/_blog_masthead.html.erb (0.9ms)
+  Rendered shared/_blog_sidebar.html.erb (0.4ms)
+  Rendered shared/_blog_footer.html.erb (0.4ms)
+Completed 200 OK in 20859ms (Views: 20779.7ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/blogs" for 10.240.1.15 at 2017-07-17 17:23:53 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (47.4ms)
+  Rendered blogs/index.html.erb within layouts/blog (61.2ms)
+Completed 500 Internal Server Error in 3797ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: flat-ui.
+Load paths:
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/config
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/images
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/javascripts
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/stylesheets
+  /home/ubuntu/workspace/devcampPortfolio/vendor/assets/javascripts
+  /home/ubuntu/workspace/devcampPortfolio/vendor/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/font-awesome-rails-4.7.0.2/app/assets/fonts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/font-awesome-rails-4.7.0.2/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/actioncable-5.0.3/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/popper_js-1.9.9/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/stylesheets):
+     9:     
+    10:     <meta name="keywords" content= "<%= @seokeywords %>" />
+    11: 
+    12:     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/blogs.scss:6
+app/views/layouts/blog.html.erb:12:in `_app_views_layouts_blog_html_erb__3897451473809402269_70309002609320'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.2ms)
+Started GET "/blogs" for 10.240.0.69 at 2017-07-17 17:24:19 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (1.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (32.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (63.1ms)
+Completed 500 Internal Server Error in 1884ms (ActiveRecord: 19.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: flat-ui.
+Load paths:
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/config
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/images
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/javascripts
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/stylesheets
+  /home/ubuntu/workspace/devcampPortfolio/vendor/assets/javascripts
+  /home/ubuntu/workspace/devcampPortfolio/vendor/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/font-awesome-rails-4.7.0.2/app/assets/fonts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/font-awesome-rails-4.7.0.2/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/actioncable-5.0.3/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/popper_js-1.9.9/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/stylesheets):
+     9:     
+    10:     <meta name="keywords" content= "<%= @seokeywords %>" />
+    11: 
+    12:     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/blogs.scss:6
+app/views/layouts/blog.html.erb:12:in `_app_views_layouts_blog_html_erb___82726784751670563_27015840'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (48.8ms)
+Started GET "/blogs" for 10.240.1.20 at 2017-07-17 17:32:02 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (11.9ms)
+  Rendered shared/_blog_nav.html.erb (9.8ms)
+  Rendered shared/_blog_masthead.html.erb (0.7ms)
+  Rendered shared/_blog_sidebar.html.erb (0.6ms)
+  Rendered shared/_blog_footer.html.erb (0.6ms)
+Completed 200 OK in 8109ms (Views: 8104.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs" for 10.240.0.186 at 2017-07-17 17:34:28 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (10.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (14.0ms)
+  Rendered shared/_blog_nav.html.erb (1.2ms)
+  Rendered shared/_blog_masthead.html.erb (0.6ms)
+  Rendered shared/_blog_sidebar.html.erb (0.6ms)
+  Rendered shared/_blog_footer.html.erb (0.3ms)
+Completed 200 OK in 157ms (Views: 151.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/blogs" for 10.240.1.60 at 2017-07-17 17:34:40 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (12.5ms)
+  Rendered blogs/index.html.erb within layouts/blog (15.6ms)
+  Rendered shared/_blog_nav.html.erb (1.6ms)
+  Rendered shared/_blog_masthead.html.erb (0.6ms)
+  Rendered shared/_blog_sidebar.html.erb (0.6ms)
+  Rendered shared/_blog_footer.html.erb (0.3ms)
+Completed 200 OK in 310ms (Views: 305.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs" for 10.240.0.69 at 2017-07-17 17:35:11 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (134.3ms)
+  Rendered blogs/index.html.erb within layouts/blog (137.9ms)
+  Rendered shared/_blog_nav.html.erb (1.7ms)
+  Rendered shared/_blog_masthead.html.erb (0.7ms)
+  Rendered shared/_blog_sidebar.html.erb (0.7ms)
+  Rendered shared/_blog_footer.html.erb (0.4ms)
+Completed 200 OK in 269ms (Views: 263.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/blogs" for 10.240.1.60 at 2017-07-17 17:37:14 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (14.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (18.1ms)
+Completed 500 Internal Server Error in 1052ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after " font-size 1.5em": expected "{", was "; "):
+     9:     
+    10:     <meta name="keywords" content= "<%= @seokeywords %>" />
+    11: 
+    12:     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/blogs.scss:6396
+app/views/layouts/blog.html.erb:12:in `_app_views_layouts_blog_html_erb___82726784751670563_69839838673780'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (31.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.9ms)
+Started GET "/blogs" for 10.240.1.20 at 2017-07-17 17:37:36 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (11.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (14.1ms)
+Completed 500 Internal Server Error in 933ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after " font-size 1.5em": expected "{", was "; "):
+     9:     
+    10:     <meta name="keywords" content= "<%= @seokeywords %>" />
+    11: 
+    12:     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/blogs.scss:6396
+app/views/layouts/blog.html.erb:12:in `_app_views_layouts_blog_html_erb___82726784751670563_69840125644880'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.5ms)
+Started GET "/blogs" for 10.240.1.20 at 2017-07-17 17:37:45 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (13.6ms)
+  Rendered blogs/index.html.erb within layouts/blog (17.3ms)
+  Rendered shared/_blog_nav.html.erb (1.8ms)
+  Rendered shared/_blog_masthead.html.erb (0.4ms)
+  Rendered shared/_blog_sidebar.html.erb (0.7ms)
+  Rendered shared/_blog_footer.html.erb (0.3ms)
+Completed 200 OK in 7378ms (Views: 7371.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/blogs" for 10.240.1.64 at 2017-07-17 17:38:30 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (11.6ms)
+  Rendered blogs/index.html.erb within layouts/blog (16.9ms)
+  Rendered shared/_blog_nav.html.erb (2.0ms)
+  Rendered shared/_blog_masthead.html.erb (0.6ms)
+  Rendered shared/_blog_sidebar.html.erb (0.6ms)
+  Rendered shared/_blog_footer.html.erb (0.4ms)
+Completed 200 OK in 232ms (Views: 226.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/blogs" for 10.240.0.186 at 2017-07-17 17:39:01 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (34.3ms)
+  Rendered blogs/index.html.erb within layouts/blog (131.6ms)
+  Rendered shared/_blog_nav.html.erb (1.8ms)
+  Rendered shared/_blog_masthead.html.erb (0.7ms)
+  Rendered shared/_blog_sidebar.html.erb (1.2ms)
+  Rendered shared/_blog_footer.html.erb (0.4ms)
+Completed 200 OK in 8647ms (Views: 8640.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/blogs" for 10.240.1.20 at 2017-07-17 17:41:06 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (19.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (24.7ms)
+  Rendered shared/_blog_nav.html.erb (1.3ms)
+  Rendered shared/_blog_masthead.html.erb (0.4ms)
+  Rendered shared/_blog_sidebar.html.erb (0.5ms)
+  Rendered shared/_blog_footer.html.erb (0.3ms)
+Completed 200 OK in 322ms (Views: 313.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/blogs" for 10.240.1.20 at 2017-07-17 17:41:51 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (13.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (16.6ms)
+  Rendered shared/_blog_nav.html.erb (3.0ms)
+  Rendered shared/_blog_masthead.html.erb (1.1ms)
+  Rendered shared/_blog_sidebar.html.erb (0.9ms)
+  Rendered shared/_blog_footer.html.erb (0.6ms)
+Completed 200 OK in 269ms (Views: 264.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/blogs" for 10.240.0.186 at 2017-07-17 17:42:15 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (14.3ms)
+  Rendered blogs/index.html.erb within layouts/blog (18.2ms)
+  Rendered shared/_blog_nav.html.erb (1.3ms)
+  Rendered shared/_blog_masthead.html.erb (0.6ms)
+  Rendered shared/_blog_sidebar.html.erb (0.5ms)
+  Rendered shared/_blog_footer.html.erb (0.5ms)
+Completed 200 OK in 153ms (Views: 146.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs" for 10.240.0.182 at 2017-07-17 17:42:25 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (11.2ms)
+  Rendered blogs/index.html.erb within layouts/blog (14.2ms)
+  Rendered shared/_blog_nav.html.erb (1.3ms)
+  Rendered shared/_blog_masthead.html.erb (0.4ms)
+  Rendered shared/_blog_sidebar.html.erb (0.5ms)
+  Rendered shared/_blog_footer.html.erb (0.5ms)
+Completed 200 OK in 215ms (Views: 209.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs" for 10.240.0.69 at 2017-07-17 17:47:56 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 4.8ms)
+
+
+  
+NoMethodError (undefined method `page' for #<Class:0x007f09d8fa5760>):
+  
+app/controllers/blogs_controller.rb:10:in `index'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.2ms)
+Started GET "/blogs" for 10.240.0.69 at 2017-07-17 17:48:32 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (1.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered collection of blogs/_blog.html.erb [5 times] (35.9ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (80.2ms)
+  Rendered shared/_blog_nav.html.erb (5.0ms)
+  Rendered shared/_blog_masthead.html.erb (0.8ms)
+  Rendered shared/_blog_sidebar.html.erb (1.0ms)
+  Rendered shared/_blog_footer.html.erb (0.7ms)
+Completed 200 OK in 998ms (Views: 921.2ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/blogs" for 10.240.0.69 at 2017-07-17 17:49:33 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  Rendered collection of blogs/_blog.html.erb [5 times] (5.2ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (17.5ms)
+  Rendered shared/_blog_nav.html.erb (1.4ms)
+  Rendered shared/_blog_masthead.html.erb (0.7ms)
+  Rendered shared/_blog_sidebar.html.erb (0.7ms)
+  Rendered shared/_blog_footer.html.erb (0.5ms)
+Completed 200 OK in 199ms (Views: 193.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs?page=2" for 10.240.0.204 at 2017-07-17 17:49:38 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 5]]
+  Rendered collection of blogs/_blog.html.erb [5 times] (5.3ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/blog (25.1ms)
+  Rendered shared/_blog_nav.html.erb (1.5ms)
+  Rendered shared/_blog_masthead.html.erb (0.4ms)
+  Rendered shared/_blog_sidebar.html.erb (0.5ms)
+  Rendered shared/_blog_footer.html.erb (0.6ms)
+Completed 200 OK in 272ms (Views: 267.0ms | ActiveRecord: 1.8ms)
+
+
