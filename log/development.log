@@ -19417,3 +19417,39 @@ Processing by BlogsController#index as HTML
 Completed 200 OK in 6552ms (Views: 6547.9ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/blogs" for 10.240.0.186 at 2017-07-17 15:24:44 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (12.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (16.4ms)
+  Rendered shared/_blog_nav.html.erb (0.9ms)
+  Rendered shared/_application_nav.html.erb (1.2ms)
+Completed 200 OK in 91ms (Views: 87.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs" for 10.240.1.19 at 2017-07-17 15:25:30 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.8ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (18.4ms)
+  Rendered blogs/index.html.erb within layouts/blog (23.5ms)
+  Rendered shared/_blog_nav.html.erb (2.0ms)
+  Rendered shared/_application_nav.html.erb (2.2ms)
+Completed 200 OK in 167ms (Views: 158.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs" for 10.240.0.69 at 2017-07-17 15:26:36 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (14.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (17.9ms)
+  Rendered shared/_blog_nav.html.erb (8.0ms)
+  Rendered shared/_application_nav.html.erb (1.3ms)
+Completed 200 OK in 197ms (Views: 193.3ms | ActiveRecord: 0.6ms)
+
+
