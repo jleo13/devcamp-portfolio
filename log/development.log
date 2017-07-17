@@ -19453,3 +19453,785 @@ Processing by BlogsController#index as HTML
 Completed 200 OK in 197ms (Views: 193.3ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/blogs" for 10.240.1.15 at 2017-07-17 15:46:01 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.9ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (21.4ms)
+  Rendered blogs/index.html.erb within layouts/blog (47.8ms)
+  Rendered shared/_blog_nav.html.erb (1.8ms)
+  Rendered shared/_application_nav.html.erb (2.0ms)
+Completed 200 OK in 378ms (Views: 231.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs" for 10.240.1.60 at 2017-07-17 15:46:24 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (2.1ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (23.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (32.4ms)
+  Rendered shared/_blog_nav.html.erb (2.2ms)
+  Rendered shared/_application_nav.html.erb (1.8ms)
+Completed 200 OK in 165ms (Views: 159.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/blogs" for 10.240.0.186 at 2017-07-17 15:47:14 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (3.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (20.6ms)
+  Rendered blogs/index.html.erb within layouts/blog (27.7ms)
+  Rendered shared/_blog_nav.html.erb (2.5ms)
+  Rendered shared/_application_nav.html.erb (2.1ms)
+Completed 200 OK in 141ms (Views: 134.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/blogs" for 10.240.1.60 at 2017-07-17 15:47:43 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (28.2ms)
+  Rendered blogs/index.html.erb within layouts/blog (48.0ms)
+  Rendered shared/_blog_nav.html.erb (2.4ms)
+  Rendered shared/_application_nav.html.erb (7.2ms)
+Completed 200 OK in 382ms (Views: 292.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs/my-blog-post-8/toggle_status" for 10.240.0.69 at 2017-07-17 15:47:45 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"my-blog-post-8"}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/blogs
+Filter chain halted as #<Proc:0x007f6a66ddd038@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 10.240.0.204 at 2017-07-17 15:47:45 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (16.9ms)
+  Rendered blogs/index.html.erb within layouts/blog (20.9ms)
+  Rendered shared/_blog_nav.html.erb (2.3ms)
+  Rendered shared/_application_nav.html.erb (2.2ms)
+Completed 200 OK in 167ms (Views: 162.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs/my-blog-post-1/toggle_status" for 10.240.0.69 at 2017-07-17 15:47:47 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"my-blog-post-1"}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/blogs
+Filter chain halted as #<Proc:0x007f6a66ddd038@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 10.240.0.186 at 2017-07-17 15:47:47 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.9ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (15.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (19.8ms)
+  Rendered shared/_blog_nav.html.erb (1.7ms)
+  Rendered shared/_application_nav.html.erb (1.0ms)
+Completed 200 OK in 108ms (Views: 103.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs/my-blog-post-1/toggle_status" for 10.240.0.186 at 2017-07-17 15:47:53 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"my-blog-post-1"}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/blogs
+Filter chain halted as #<Proc:0x007f6a66ddd038@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 10.240.0.69 at 2017-07-17 15:47:53 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (18.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (22.1ms)
+  Rendered shared/_blog_nav.html.erb (2.3ms)
+  Rendered shared/_application_nav.html.erb (1.8ms)
+Completed 200 OK in 188ms (Views: 183.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs/my-blog-post-1/toggle_status" for 10.240.1.32 at 2017-07-17 15:47:56 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#toggle_status as HTML
+  Parameters: {"id"=>"my-blog-post-1"}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/blogs
+Filter chain halted as #<Proc:0x007f6a66ddd038@/usr/local/rvm/gems/ruby-2.4.0/gems/petergate-1.7.5/lib/petergate/action_controller/base.rb:46> rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 10.240.1.20 at 2017-07-17 15:47:56 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (44.6ms)
+  Rendered blogs/index.html.erb within layouts/blog (53.3ms)
+  Rendered shared/_blog_nav.html.erb (2.1ms)
+  Rendered shared/_application_nav.html.erb (13.0ms)
+Completed 200 OK in 199ms (Views: 191.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs" for 10.240.1.19 at 2017-07-17 15:48:43 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (16.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (29.9ms)
+  Rendered shared/_blog_nav.html.erb (3.1ms)
+  Rendered shared/_application_nav.html.erb (1.6ms)
+Completed 200 OK in 186ms (Views: 124.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for 10.240.0.69 at 2017-07-17 15:52:56 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.9ms)
+  Rendered shared/_application_nav.html.erb (2.1ms)
+  Rendered shared/_application_footer.html.erb (0.6ms)
+Completed 200 OK in 146ms (Views: 143.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 10.240.1.19 at 2017-07-17 15:52:56 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.5ms)
+  Rendered shared/_application_nav.html.erb (2.6ms)
+  Rendered shared/_application_footer.html.erb (0.5ms)
+Completed 200 OK in 96ms (Views: 94.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 10.240.1.19 at 2017-07-17 15:53:03 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A50bw9K4XgiIYUYF8arMTJ65/fgmEMWi4aXomH5Mij7sIkW4JtVMoeC0OD4950MF+4i+qkbw3zHCyTt9l/vhCQ==", "user"=>{"email"=>"jackleonard02@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (75.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "jackleonard02@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "current_sign_in_ip" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["current_sign_in_at", "2017-07-17 15:53:04.115706"], ["last_sign_in_at", "2017-07-13 17:44:26.863457"], ["current_sign_in_ip", "10.240.1.19/32"], ["last_sign_in_ip", "10.240.0.204/32"], ["sign_in_count", 5], ["updated_at", "2017-07-17 15:53:04.118830"], ["id", 5]]
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/edit
+Completed 302 Found in 375ms (ActiveRecord: 83.2ms)
+
+
+Started GET "/edit" for 10.240.1.19 at 2017-07-17 15:53:04 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (7.4ms)
+  Rendered shared/_application_nav.html.erb (3.3ms)
+  Rendered shared/_application_footer.html.erb (0.5ms)
+Completed 200 OK in 121ms (Views: 116.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/blogs" for 10.240.1.15 at 2017-07-17 15:53:05 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (12.2ms)
+  Rendered blogs/index.html.erb within layouts/blog (16.5ms)
+  Rendered shared/_blog_nav.html.erb (2.1ms)
+  Rendered shared/_application_nav.html.erb (1.7ms)
+Completed 200 OK in 157ms (Views: 149.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/blogs" for 10.240.0.182 at 2017-07-17 15:53:05 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (2.0ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (10.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (16.1ms)
+  Rendered shared/_blog_nav.html.erb (1.9ms)
+  Rendered shared/_application_nav.html.erb (1.5ms)
+Completed 200 OK in 134ms (Views: 123.2ms | ActiveRecord: 3.6ms)
+
+
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started DELETE "/logout" for 10.240.1.60 at 2017-07-17 15:53:55 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1UhP08/Gz7BQa40XdLDMHIgASsOFknXsGgqYm5GMLvcCqu4QMgatJ9x7vsxOoz0u///scTBXyFzxZjejFdkJlg=="}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Completed 302 Found in 24ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 10.240.0.186 at 2017-07-17 15:53:55 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+  Rendered shared/_application_nav.html.erb (2.8ms)
+  Rendered shared/_application_footer.html.erb (3.9ms)
+Completed 200 OK in 237ms (Views: 195.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 10.240.1.15 at 2017-07-17 15:53:57 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.1ms)
+  Rendered shared/_application_nav.html.erb (2.8ms)
+  Rendered shared/_application_footer.html.erb (0.7ms)
+Completed 200 OK in 229ms (Views: 226.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 10.240.1.60 at 2017-07-17 15:53:59 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.2ms)
+  Rendered shared/_application_nav.html.erb (7.2ms)
+  Rendered shared/_application_footer.html.erb (0.9ms)
+Completed 200 OK in 173ms (Views: 170.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 10.240.1.15 at 2017-07-17 15:54:08 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZZRrL42RMJacvVyDta/I3QEG3uWsV6GazdHe85wZkYX9SYeGmoBYEHx0GuNBhsFksMoo7KZscnqiBRU29inNbQ==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 195ms (ActiveRecord: 1.2ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZZRrL42RMJacvVyDta/I3QEG3uWsV6GazdHe85wZkYX9SYeGmoBYEHx0GuNBhsFksMoo7KZscnqiBRU29inNbQ==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.9ms)
+  Rendered shared/_application_nav.html.erb (2.6ms)
+  Rendered shared/_application_footer.html.erb (0.7ms)
+Completed 200 OK in 343ms (Views: 195.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 10.240.1.19 at 2017-07-17 15:54:16 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QCcKeFv0rZxDioEg18VfY9P6gS2pzEFpY3yfiDsBsATY+ubRTOXFGqNDx0Aj7FbaYjZ3JKP3kokMqFRNUTHs7A==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2017-07-17 15:54:16.382992"], ["current_sign_in_ip", "10.240.1.19/32"], ["sign_in_count", 2], ["updated_at", "2017-07-17 15:54:16.385005"], ["id", 1]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Completed 302 Found in 154ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/" for 10.240.1.19 at 2017-07-17 15:54:16 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (3.7ms)
+  Rendered shared/_application_nav.html.erb (1.7ms)
+  Rendered shared/_application_footer.html.erb (0.6ms)
+Completed 200 OK in 99ms (Views: 96.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs" for 10.240.1.15 at 2017-07-17 15:54:20 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (15.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (19.2ms)
+  Rendered shared/_blog_nav.html.erb (1.8ms)
+  Rendered shared/_application_nav.html.erb (1.2ms)
+Completed 200 OK in 255ms (Views: 250.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/blogs" for 10.240.1.15 at 2017-07-17 15:54:21 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (14.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (17.3ms)
+  Rendered shared/_blog_nav.html.erb (1.1ms)
+  Rendered shared/_application_nav.html.erb (0.9ms)
+Completed 200 OK in 116ms (Views: 112.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs" for 10.240.1.19 at 2017-07-17 15:57:23 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (1.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (3.5ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/devcampPortfolio/app/views/blogs/_blog.html.erb:6: syntax error, unexpected ')', expecting keyword_end
+ confirm: 'Are you sure?' }) );@output_buffer.safe_append='
+                              ^):
+  
+app/views/blogs/_blog.html.erb:6: syntax error, unexpected ')', expecting keyword_end
+app/views/blogs/index.html.erb:3:in `_app_views_blogs_index_html_erb___1038105488785279632_70047305763980'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.9ms)
+Started GET "/blogs" for 10.240.1.19 at 2017-07-17 15:57:42 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (1.4ms)
+  Rendered blogs/index.html.erb within layouts/blog (4.4ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.5ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/devcampPortfolio/app/views/blogs/_blog.html.erb:6: syntax error, unexpected ')', expecting keyword_end
+ confirm: 'Are you sure?' }) );@output_buffer.safe_append='
+                              ^):
+  
+app/views/blogs/_blog.html.erb:6: syntax error, unexpected ')', expecting keyword_end
+app/views/blogs/index.html.erb:3:in `_app_views_blogs_index_html_erb___1038105488785279632_70047538513780'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.0ms)
+Started GET "/blogs" for 10.240.1.20 at 2017-07-17 15:58:26 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (1.6ms)
+  Rendered blogs/index.html.erb within layouts/blog (4.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.9ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/devcampPortfolio/app/views/blogs/_blog.html.erb:6: syntax error, unexpected ')', expecting keyword_end
+ confirm: 'Are you sure?' }) );@output_buffer.safe_append='
+                              ^):
+  
+app/views/blogs/_blog.html.erb:6: syntax error, unexpected ')', expecting keyword_end
+app/views/blogs/index.html.erb:3:in `_app_views_blogs_index_html_erb___1038105488785279632_70047437950500'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.4ms)
+Started GET "/blogs" for 10.240.1.64 at 2017-07-17 16:00:15 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (1.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (3.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.9ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/devcampPortfolio/app/views/blogs/_blog.html.erb:5: syntax error, unexpected ')', expecting keyword_end
+ confirm: 'Are you sure?' }) );@output_buffer.safe_append='
+                              ^):
+  
+app/views/blogs/_blog.html.erb:5: syntax error, unexpected ')', expecting keyword_end
+app/views/blogs/index.html.erb:3:in `_app_views_blogs_index_html_erb___1038105488785279632_70047432905980'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.9ms)
+Started GET "/blogs" for 10.240.0.204 at 2017-07-17 16:01:03 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (1.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (4.4ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.0ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/devcampPortfolio/app/views/blogs/_blog.html.erb:6: syntax error, unexpected ')', expecting keyword_end
+ confirm: 'Are you sure?' }) );@output_buffer.safe_append='
+                              ^):
+  
+app/views/blogs/_blog.html.erb:6: syntax error, unexpected ')', expecting keyword_end
+app/views/blogs/index.html.erb:3:in `_app_views_blogs_index_html_erb___1038105488785279632_70047601184580'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.6ms)
+Started GET "/blogs" for 10.240.1.20 at 2017-07-17 16:02:06 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (1.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (4.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.3ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/devcampPortfolio/app/views/blogs/_blog.html.erb:8: syntax error, unexpected ')', expecting keyword_end
+ confirm: 'Are you sure?' }) );@output_buffer.safe_append='
+                              ^):
+  
+app/views/blogs/_blog.html.erb:8: syntax error, unexpected ')', expecting keyword_end
+app/views/blogs/index.html.erb:3:in `_app_views_blogs_index_html_erb___1038105488785279632_70047478238060'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.1ms)
+Started GET "/blogs" for 10.240.1.64 at 2017-07-17 16:03:13 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (1.1ms)
+  Rendered blogs/index.html.erb within layouts/blog (3.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.9ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/devcampPortfolio/app/views/blogs/_blog.html.erb:8: syntax error, unexpected ')', expecting keyword_end
+) if logged_in?(:site_admin) );@output_buffer.safe_append='
+                              ^):
+  
+app/views/blogs/_blog.html.erb:8: syntax error, unexpected ')', expecting keyword_end
+app/views/blogs/index.html.erb:3:in `_app_views_blogs_index_html_erb___1038105488785279632_70047540571200'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.8ms)
+Started GET "/blogs" for 10.240.0.186 at 2017-07-17 16:03:40 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (10.9ms)
+  Rendered blogs/index.html.erb within layouts/blog (13.9ms)
+  Rendered shared/_blog_nav.html.erb (1.4ms)
+  Rendered shared/_application_nav.html.erb (1.0ms)
+Completed 200 OK in 147ms (Views: 142.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/blogs/my-blog-post-1" for 10.240.0.204 at 2017-07-17 16:04:37 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"my-blog-post-1"}
+  [1m[36mBlog Load (3.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-1"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered blogs/show.html.erb within layouts/blog (0.9ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 3.4ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/devcampPortfolio/app/views/blogs/show.html.erb:13: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+f if logged_in?(:site_admin) );@output_buffer.safe_append=' 
+                              ^
+/home/ubuntu/workspace/devcampPortfolio/app/views/blogs/show.html.erb:16: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/ubuntu/workspace/devcampPortfolio/app/views/blogs/show.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/blogs/show.html.erb:13: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+app/views/blogs/show.html.erb:16: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/blogs/show.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.1ms)
+Started GET "/blogs" for 10.240.0.69 at 2017-07-17 16:04:43 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.8ms)
+  Rendered blogs/index.html.erb within layouts/blog (12.5ms)
+  Rendered shared/_blog_nav.html.erb (1.2ms)
+  Rendered shared/_application_nav.html.erb (0.9ms)
+Completed 200 OK in 90ms (Views: 86.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs/my-blog-post-1" for 10.240.0.69 at 2017-07-17 16:04:53 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"my-blog-post-1"}
+  [1m[36mBlog Load (1.0ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-1"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered blogs/show.html.erb within layouts/blog (0.9ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.5ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/devcampPortfolio/app/views/blogs/show.html.erb:13: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+f if logged_in?(:site_admin) );@output_buffer.safe_append=' 
+                              ^
+/home/ubuntu/workspace/devcampPortfolio/app/views/blogs/show.html.erb:16: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/ubuntu/workspace/devcampPortfolio/app/views/blogs/show.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/blogs/show.html.erb:13: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+app/views/blogs/show.html.erb:16: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/blogs/show.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.5ms)
+Started GET "/blogs" for 10.240.0.69 at 2017-07-17 16:05:01 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.9ms)
+  Rendered blogs/index.html.erb within layouts/blog (12.4ms)
+  Rendered shared/_blog_nav.html.erb (1.3ms)
+  Rendered shared/_application_nav.html.erb (1.0ms)
+Completed 200 OK in 103ms (Views: 99.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs/my-blog-post-1" for 10.240.0.69 at 2017-07-17 16:05:08 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"my-blog-post-1"}
+  [1m[36mBlog Load (0.8ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-1"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered blogs/show.html.erb within layouts/blog (1.0ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.1ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/devcampPortfolio/app/views/blogs/show.html.erb:13: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+f if logged_in?(:site_admin) );@output_buffer.safe_append=' 
+                              ^
+/home/ubuntu/workspace/devcampPortfolio/app/views/blogs/show.html.erb:16: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/ubuntu/workspace/devcampPortfolio/app/views/blogs/show.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/blogs/show.html.erb:13: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+app/views/blogs/show.html.erb:16: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/blogs/show.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.0ms)
+Started GET "/blogs/my-blog-post-1" for 10.240.1.20 at 2017-07-17 16:06:14 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"my-blog-post-1"}
+  [1m[36mBlog Load (0.8ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-1"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered blogs/show.html.erb within layouts/blog (1.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.2ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/devcampPortfolio/app/views/blogs/show.html.erb:13: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+f if logged_in?(:site_admin) );@output_buffer.safe_append=' 
+                              ^
+/home/ubuntu/workspace/devcampPortfolio/app/views/blogs/show.html.erb:16: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/ubuntu/workspace/devcampPortfolio/app/views/blogs/show.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/blogs/show.html.erb:13: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+app/views/blogs/show.html.erb:16: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/blogs/show.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.9ms)
+Started GET "/blogs/my-blog-post-1" for 10.240.1.15 at 2017-07-17 16:07:19 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"my-blog-post-1"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-1"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered blogs/show.html.erb within layouts/blog (1.1ms)
+  Rendered shared/_blog_nav.html.erb (1.1ms)
+  Rendered shared/_application_nav.html.erb (0.8ms)
+Completed 200 OK in 177ms (Views: 171.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs" for 10.240.1.60 at 2017-07-17 16:07:34 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (10.2ms)
+  Rendered blogs/index.html.erb within layouts/blog (13.6ms)
+  Rendered shared/_blog_nav.html.erb (1.2ms)
+  Rendered shared/_application_nav.html.erb (0.9ms)
+Completed 200 OK in 97ms (Views: 92.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/blogs/my-blog-post-1" for 10.240.1.64 at 2017-07-17 16:07:39 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"my-blog-post-1"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-1"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/show.html.erb within layouts/blog
+  Rendered blogs/show.html.erb within layouts/blog (1.2ms)
+  Rendered shared/_blog_nav.html.erb (1.3ms)
+  Rendered shared/_application_nav.html.erb (1.0ms)
+Completed 200 OK in 136ms (Views: 131.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs/my-blog-post-1/edit" for 10.240.0.182 at 2017-07-17 16:07:45 +0000
+Cannot render console from 10.240.0.182! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"my-blog-post-1"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."slug" = $1 ORDER BY "blogs"."id" ASC LIMIT $2[0m  [["slug", "my-blog-post-1"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/edit.html.erb within layouts/blog
+  Rendered blogs/_form.html.erb (4.8ms)
+  Rendered blogs/edit.html.erb within layouts/blog (6.5ms)
+  Rendered shared/_blog_nav.html.erb (1.4ms)
+  Rendered shared/_application_nav.html.erb (0.8ms)
+Completed 200 OK in 100ms (Views: 94.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs" for 10.240.0.186 at 2017-07-17 16:09:15 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.7ms)
+  Rendered blogs/index.html.erb within layouts/blog (12.5ms)
+  Rendered shared/_blog_nav.html.erb (1.2ms)
+  Rendered shared/_application_nav.html.erb (0.9ms)
+Completed 200 OK in 215ms (Views: 211.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/blogs" for 10.240.1.60 at 2017-07-17 16:10:33 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (9.5ms)
+  Rendered blogs/index.html.erb within layouts/blog (12.2ms)
+  Rendered shared/_blog_nav.html.erb (1.7ms)
+Completed 200 OK in 216ms (Views: 212.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs" for 10.240.1.15 at 2017-07-17 16:10:47 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (10.0ms)
+  Rendered blogs/index.html.erb within layouts/blog (12.6ms)
+  Rendered shared/_blog_nav.html.erb (1.1ms)
+Completed 200 OK in 224ms (Views: 220.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs" for 10.240.0.204 at 2017-07-17 16:14:27 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BlogsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering blogs/index.html.erb within layouts/blog
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  Rendered collection of blogs/_blog.html.erb [10 times] (15.3ms)
+  Rendered blogs/index.html.erb within layouts/blog (19.8ms)
+  Rendered shared/_blog_nav.html.erb (3.1ms)
+Completed 200 OK in 145ms (Views: 138.9ms | ActiveRecord: 1.3ms)
+
+
