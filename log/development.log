@@ -22064,3 +22064,71 @@ Processing by PortfoliosController#index as HTML
 Completed 200 OK in 93ms (Views: 89.6ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/portfolios" for 10.240.1.19 at 2017-07-20 15:24:51 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.9ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (10.4ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (14.4ms)
+Completed 500 Internal Server Error in 377ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_portfolio_nav with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ubuntu/workspace/devcampPortfolio/app/views"
+  * "/usr/local/rvm/gems/ruby-2.4.0/gems/kaminari-core-1.0.1/app/views"
+  * "/usr/local/rvm/gems/ruby-2.4.0/gems/devise-4.3.0/app/views"
+):
+    15: 
+    16:   <body>
+    17:     <!-- start of nav -->
+    18:     <%= render 'shared/portfolio_nav' %>
+    19:     
+    20:  <!-- end of nav -->
+    21:   <!-- start of masthead -->
+  
+app/views/layouts/portfolio.html.erb:18:in `_app_views_layouts_portfolio_html_erb__1947545267932311736_69964644396920'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (29.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.8ms)
+Started GET "/portfolios" for 10.240.1.17 at 2017-07-20 15:26:49 +0000
+Cannot render console from 10.240.1.17! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (15.8ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (19.9ms)
+  Rendered shared/_portfolio_nav.html.erb (1.4ms)
+Completed 200 OK in 96ms (Views: 92.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/portfolios" for 10.240.0.69 at 2017-07-20 15:28:24 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.4ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (9.9ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (13.0ms)
+  Rendered shared/_portfolio_nav.html.erb (1.4ms)
+Completed 200 OK in 195ms (Views: 191.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/portfolios" for 10.240.0.204 at 2017-07-20 15:47:52 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios"[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (15.4ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (20.1ms)
+  Rendered shared/_portfolio_nav.html.erb (1.5ms)
+  Rendered shared/_portfolio_masthead.html.erb (4.2ms)
+  Rendered shared/_portfolio_footer.html.erb (0.4ms)
+Completed 200 OK in 237ms (Views: 227.2ms | ActiveRecord: 0.6ms)
+
+
