@@ -26647,3 +26647,528 @@ Processing by PortfoliosController#index as HTML
 Completed 200 OK in 450ms (Views: 445.1ms | ActiveRecord: 1.5ms)
 
 
+Started GET "/portfolios" for 10.240.1.32 at 2017-07-25 16:38:36 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (2.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (25.5ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (36.5ms)
+  Rendered shared/_portfolio_nav.html.erb (1.8ms)
+  Rendered shared/_portfolio_masthead.html.erb (0.9ms)
+  Rendered shared/_portfolio_footer.html.erb (0.8ms)
+Completed 200 OK in 1174ms (Views: 1167.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/portfolios" for 10.240.0.204 at 2017-07-25 16:39:42 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.7ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (39.4ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (220.6ms)
+  Rendered shared/_portfolio_nav.html.erb (1.8ms)
+  Rendered shared/_portfolio_masthead.html.erb (4.4ms)
+  Rendered shared/_portfolio_footer.html.erb (0.7ms)
+Completed 200 OK in 886ms (Views: 881.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/portfolios" for 10.240.0.186 at 2017-07-25 16:40:19 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (1.7ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (18.1ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (24.6ms)
+  Rendered shared/_portfolio_nav.html.erb (2.2ms)
+  Rendered shared/_portfolio_masthead.html.erb (1.1ms)
+  Rendered shared/_portfolio_footer.html.erb (0.7ms)
+Completed 200 OK in 1102ms (Views: 1096.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/portfolios" for 10.240.1.32 at 2017-07-25 16:41:42 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (2.0ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (22.3ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (58.2ms)
+  Rendered shared/_portfolio_nav.html.erb (2.0ms)
+  Rendered shared/_portfolio_masthead.html.erb (1.1ms)
+  Rendered shared/_portfolio_footer.html.erb (0.7ms)
+Completed 200 OK in 2344ms (Views: 2170.2ms | ActiveRecord: 26.9ms)
+
+
+Started GET "/portfolios" for 10.240.0.69 at 2017-07-25 16:42:53 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (176.2ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (182.4ms)
+  Rendered shared/_portfolio_nav.html.erb (1.1ms)
+  Rendered shared/_portfolio_masthead.html.erb (0.5ms)
+  Rendered shared/_portfolio_footer.html.erb (0.4ms)
+Completed 200 OK in 891ms (Views: 885.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/portfolios" for 10.240.0.69 at 2017-07-25 16:43:11 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.5ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (14.8ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (18.2ms)
+  Rendered shared/_portfolio_nav.html.erb (1.3ms)
+  Rendered shared/_portfolio_masthead.html.erb (0.6ms)
+  Rendered shared/_portfolio_footer.html.erb (0.6ms)
+Completed 200 OK in 622ms (Views: 619.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/portfolios" for 10.240.0.186 at 2017-07-25 16:44:27 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (1.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (43.2ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (111.9ms)
+  Rendered shared/_portfolio_nav.html.erb (1.7ms)
+  Rendered shared/_portfolio_masthead.html.erb (0.8ms)
+  Rendered shared/_portfolio_footer.html.erb (0.8ms)
+Completed 200 OK in 948ms (Views: 943.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/portfolios" for 10.240.1.60 at 2017-07-25 16:44:50 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.7ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (24.7ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (30.6ms)
+  Rendered shared/_portfolio_nav.html.erb (1.9ms)
+  Rendered shared/_portfolio_masthead.html.erb (1.1ms)
+  Rendered shared/_portfolio_footer.html.erb (0.7ms)
+Completed 200 OK in 1023ms (Views: 1008.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/portfolios" for 10.240.0.186 at 2017-07-25 16:45:37 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.7ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (37.0ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (44.6ms)
+  Rendered shared/_portfolio_nav.html.erb (1.9ms)
+  Rendered shared/_portfolio_masthead.html.erb (0.9ms)
+  Rendered shared/_portfolio_footer.html.erb (0.6ms)
+Completed 200 OK in 588ms (Views: 580.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/portfolios" for 10.240.1.15 at 2017-07-25 16:46:45 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.9ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (19.4ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (24.6ms)
+  Rendered shared/_portfolio_nav.html.erb (1.8ms)
+  Rendered shared/_portfolio_masthead.html.erb (0.6ms)
+  Rendered shared/_portfolio_footer.html.erb (0.4ms)
+Completed 200 OK in 685ms (Views: 679.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/portfolios" for 10.240.0.69 at 2017-07-25 16:51:13 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (12.7ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (16.4ms)
+  Rendered shared/_portfolio_nav.html.erb (3.1ms)
+  Rendered shared/_portfolio_masthead.html.erb (2.2ms)
+  Rendered shared/_portfolio_footer.html.erb (1.2ms)
+Completed 200 OK in 397ms (Views: 392.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for 10.240.1.32 at 2017-07-25 16:51:50 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (129.7ms)
+  Rendered shared/_application_nav.html.erb (1.5ms)
+  Rendered shared/_application_footer.html.erb (0.6ms)
+Completed 200 OK in 572ms (Views: 563.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 10.240.1.32 at 2017-07-25 16:51:51 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.9ms)
+  Rendered shared/_application_nav.html.erb (2.0ms)
+  Rendered shared/_application_footer.html.erb (0.6ms)
+Completed 200 OK in 355ms (Views: 353.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 10.240.0.69 at 2017-07-25 16:51:55 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OQ7wCtDC1qrYLrcBoN6fQW/MQG8ZDIWnMfZr1PApVND/BCA4aaIxcSpUDA2z44l0v3JmMaIahyK8waYP2LSKVw==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (12.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "current_sign_in_ip" = $3, "sign_in_count" = $4, "updated_at" = $5 WHERE "users"."id" = $6[0m  [["current_sign_in_at", "2017-07-25 16:51:55.469771"], ["last_sign_in_at", "2017-07-20 16:45:28.526050"], ["current_sign_in_ip", "10.240.0.69/32"], ["sign_in_count", 4], ["updated_at", "2017-07-25 16:51:55.473323"], ["id", 1]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Completed 302 Found in 371ms (ActiveRecord: 19.9ms)
+
+
+Started GET "/" for 10.240.0.186 at 2017-07-25 16:51:55 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (9.5ms)
+  Rendered shared/_application_nav.html.erb (1.3ms)
+  Rendered shared/_application_footer.html.erb (0.7ms)
+Completed 200 OK in 582ms (Views: 531.7ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/portfolios" for 10.240.0.204 at 2017-07-25 16:51:58 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (11.5ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (86.2ms)
+  Rendered shared/_portfolio_nav.html.erb (0.8ms)
+  Rendered shared/_portfolio_masthead.html.erb (0.8ms)
+  Rendered shared/_portfolio_footer.html.erb (0.5ms)
+Completed 200 OK in 503ms (Views: 494.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/portfolios" for 10.240.0.204 at 2017-07-25 16:51:58 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.7ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (9.7ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (16.9ms)
+  Rendered shared/_portfolio_nav.html.erb (1.8ms)
+  Rendered shared/_portfolio_masthead.html.erb (0.8ms)
+  Rendered shared/_portfolio_footer.html.erb (0.8ms)
+Completed 200 OK in 429ms (Views: 423.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 10.240.1.19 at 2017-07-25 16:52:08 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered pages/home.html.erb within layouts/application (26.8ms)
+Started GET "/login" for 10.240.1.32 at 2017-07-25 16:52:09 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (23.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 38ms (ActiveRecord: 23.8ms)
+
+
+  Rendered shared/_application_nav.html.erb (1.3ms)
+  Rendered shared/_application_footer.html.erb (0.8ms)
+Completed 200 OK in 1591ms (Views: 1586.0ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/logout" for 10.240.1.32 at 2017-07-25 16:52:12 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t1l1NpgC4LP/DqNeVaZjhbAX/G0/ZFW3QrP3Qgukos+nlGEytwo9OSeUzdQyfoX53aIzyFyzCI8kQCx/Fz2xtA=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (57.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Completed 302 Found in 88ms (ActiveRecord: 58.5ms)
+
+
+Started GET "/" for 10.240.1.20 at 2017-07-25 16:52:12 +0000
+Cannot render console from 10.240.1.20! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.1ms)
+Started DELETE "/logout" for 10.240.0.186 at 2017-07-25 16:52:13 +0000
+Cannot render console from 10.240.0.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t1l1NpgC4LP/DqNeVaZjhbAX/G0/ZFW3QrP3Qgukos+nlGEytwo9OSeUzdQyfoX53aIzyFyzCI8kQCx/Fz2xtA=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.1.60 at 2017-07-25 16:52:13 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+Started DELETE "/logout" for 10.240.1.17 at 2017-07-25 16:52:14 +0000
+Cannot render console from 10.240.1.17! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t1l1NpgC4LP/DqNeVaZjhbAX/G0/ZFW3QrP3Qgukos+nlGEytwo9OSeUzdQyfoX53aIzyFyzCI8kQCx/Fz2xtA=="}
+Redirected to http://workspace-jackleonard-jleo23.c9users.io:8080/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+  Rendered shared/_application_nav.html.erb (2.0ms)
+  Rendered shared/_application_footer.html.erb (3.2ms)
+Completed 200 OK in 1524ms (Views: 1521.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.240.1.17 at 2017-07-25 16:52:14 +0000
+Cannot render console from 10.240.1.17! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+  Rendered shared/_application_nav.html.erb (1.8ms)
+  Rendered shared/_application_footer.html.erb (0.6ms)
+Completed 200 OK in 1753ms (Views: 1750.4ms | ActiveRecord: 0.0ms)
+
+
+  Rendered shared/_application_nav.html.erb (1.7ms)
+  Rendered shared/_application_footer.html.erb (0.7ms)
+Completed 200 OK in 931ms (Views: 928.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/portfolios" for 10.240.1.15 at 2017-07-25 16:52:16 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.7ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (20.9ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (123.3ms)
+  Rendered shared/_portfolio_nav.html.erb (3.4ms)
+  Rendered shared/_portfolio_masthead.html.erb (1.9ms)
+  Rendered shared/_portfolio_footer.html.erb (2.2ms)
+Completed 200 OK in 717ms (Views: 703.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/portfolios" for 10.240.1.19 at 2017-07-25 16:52:17 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (2.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (58.1ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (69.0ms)
+  Rendered shared/_portfolio_nav.html.erb (1.9ms)
+  Rendered shared/_portfolio_masthead.html.erb (1.1ms)
+  Rendered shared/_portfolio_footer.html.erb (6.9ms)
+Completed 200 OK in 827ms (Views: 819.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/portfolios" for 10.240.1.19 at 2017-07-25 16:57:47 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (1.1ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (16.4ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (20.7ms)
+  Rendered shared/_portfolio_nav.html.erb (1.2ms)
+  Rendered shared/_portfolio_masthead.html.erb (0.7ms)
+  Rendered shared/_portfolio_footer.html.erb (0.5ms)
+Completed 200 OK in 609ms (Views: 603.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/portfolios" for 10.240.1.32 at 2017-07-25 16:59:38 +0000
+Cannot render console from 10.240.1.32! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (1.8ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (62.1ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (67.6ms)
+  Rendered shared/_portfolio_nav.html.erb (1.4ms)
+  Rendered shared/_portfolio_masthead.html.erb (0.5ms)
+  Rendered shared/_portfolio_footer.html.erb (0.5ms)
+Completed 200 OK in 5721ms (Views: 5715.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/portfolios" for 10.240.1.64 at 2017-07-25 17:00:15 +0000
+Cannot render console from 10.240.1.64! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (1.2ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (20.8ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (45.9ms)
+  Rendered shared/_portfolio_nav.html.erb (1.5ms)
+  Rendered shared/_portfolio_masthead.html.erb (0.5ms)
+  Rendered shared/_portfolio_footer.html.erb (0.4ms)
+Completed 200 OK in 2111ms (Views: 2010.5ms | ActiveRecord: 14.4ms)
+
+
+Started GET "/portfolios" for 10.240.0.69 at 2017-07-25 17:02:01 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (145.7ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (19.2ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (170.2ms)
+  Rendered shared/_portfolio_nav.html.erb (1.4ms)
+  Rendered shared/_portfolio_masthead.html.erb (0.8ms)
+  Rendered shared/_portfolio_footer.html.erb (0.5ms)
+Completed 200 OK in 595ms (Views: 444.4ms | ActiveRecord: 145.7ms)
+
+
+Started GET "/portfolios" for 10.240.1.60 at 2017-07-25 17:03:14 +0000
+Cannot render console from 10.240.1.60! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.7ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (41.8ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (47.3ms)
+  Rendered shared/_portfolio_nav.html.erb (1.9ms)
+  Rendered shared/_portfolio_masthead.html.erb (1.0ms)
+  Rendered shared/_portfolio_footer.html.erb (0.8ms)
+Completed 200 OK in 6274ms (Views: 6268.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/portfolios" for 10.240.1.19 at 2017-07-25 17:03:41 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.7ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (19.9ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (24.1ms)
+Completed 500 Internal Server Error in 1486ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootflat.
+Load paths:
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/config
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/images
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/javascripts
+  /home/ubuntu/workspace/devcampPortfolio/app/assets/stylesheets
+  /home/ubuntu/workspace/devcampPortfolio/vendor/assets/javascripts
+  /home/ubuntu/workspace/devcampPortfolio/vendor/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-ui-rails-6.0.1/app/assets/images
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-ui-rails-6.0.1/app/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-ui-rails-6.0.1/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/font-awesome-rails-4.7.0.2/app/assets/fonts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/font-awesome-rails-4.7.0.2/app/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/actioncable-5.0.3/lib/assets/compiled
+  /usr/local/rvm/gems/ruby-2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/gems/popper_js-1.9.9/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/stylesheets
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/javascripts
+  /usr/local/rvm/gems/ruby-2.4.0/bundler/gems/bootstrap-rubygem-7cdeca9a0e8d/assets/stylesheets):
+     9:     
+    10:     <meta name="keywords" content= "<%= @seokeywords %>" />
+    11: 
+    12:     <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
+    13:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    14:   </head>
+    15: 
+  
+app/assets/stylesheets/portfolios.scss:6
+app/views/layouts/portfolio.html.erb:12:in `_app_views_layouts_portfolio_html_erb__3070492949854252154_69992272656720'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.2ms)
+Started GET "/portfolios" for 10.240.1.15 at 2017-07-25 17:03:52 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (17.7ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (24.2ms)
+  Rendered shared/_portfolio_nav.html.erb (6.0ms)
+  Rendered shared/_portfolio_masthead.html.erb (1.1ms)
+  Rendered shared/_portfolio_footer.html.erb (0.7ms)
+Completed 200 OK in 573ms (Views: 568.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/portfolios" for 10.240.0.69 at 2017-07-25 17:10:46 +0000
+Cannot render console from 10.240.0.69! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DeviseWhitelist> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/devise_whitelist.rb:7)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:SetSource> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/set_source.rb:5)
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from block in <module:DefaultPageContent> at /home/ubuntu/workspace/devcampPortfolio/app/controllers/concerns/default_page_content.rb:7)
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (18.0ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (53.1ms)
+  Rendered shared/_portfolio_nav.html.erb (1.9ms)
+  Rendered shared/_portfolio_masthead.html.erb (0.9ms)
+  Rendered shared/_portfolio_footer.html.erb (0.7ms)
+Completed 200 OK in 851ms (Views: 749.3ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/portfolios" for 10.240.1.15 at 2017-07-25 17:13:23 +0000
+Cannot render console from 10.240.1.15! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.9ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (12.8ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (16.9ms)
+  Rendered shared/_portfolio_nav.html.erb (2.0ms)
+  Rendered shared/_portfolio_masthead.html.erb (1.0ms)
+  Rendered shared/_portfolio_footer.html.erb (0.8ms)
+Completed 200 OK in 388ms (Views: 384.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/portfolios" for 10.240.1.17 at 2017-07-25 17:16:33 +0000
+Cannot render console from 10.240.1.17! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.6ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (17.7ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (22.7ms)
+  Rendered shared/_portfolio_nav.html.erb (1.4ms)
+  Rendered shared/_portfolio_masthead.html.erb (0.6ms)
+  Rendered shared/_portfolio_footer.html.erb (0.6ms)
+Completed 200 OK in 438ms (Views: 432.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/portfolios" for 10.240.0.204 at 2017-07-25 17:18:06 +0000
+Cannot render console from 10.240.0.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.7ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (26.6ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (32.0ms)
+  Rendered shared/_portfolio_nav.html.erb (2.0ms)
+  Rendered shared/_portfolio_masthead.html.erb (1.0ms)
+  Rendered shared/_portfolio_footer.html.erb (0.7ms)
+Completed 200 OK in 1551ms (Views: 1543.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/portfolios" for 10.240.1.19 at 2017-07-25 17:19:09 +0000
+Cannot render console from 10.240.1.19! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PortfoliosController#index as HTML
+  Rendering portfolios/index.html.erb within layouts/portfolio
+  [1m[36mPortfolio Load (0.8ms)[0m  [1m[34mSELECT "portfolios".* FROM "portfolios" ORDER BY position ASC[0m
+  Rendered collection of portfolios/_portfolio_item.html.erb [13 times] (18.4ms)
+  Rendered portfolios/index.html.erb within layouts/portfolio (24.0ms)
+  Rendered shared/_portfolio_nav.html.erb (1.7ms)
+  Rendered shared/_portfolio_masthead.html.erb (0.8ms)
+  Rendered shared/_portfolio_footer.html.erb (0.8ms)
+Completed 200 OK in 521ms (Views: 514.3ms | ActiveRecord: 0.8ms)
+
+
