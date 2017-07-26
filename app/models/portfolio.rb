@@ -5,6 +5,9 @@ accepts_nested_attributes_for :technologies,
 includes Placeholder
 validates_presence_of :title, :body, :main_image, :thumb_image
 
+def self.by_position
+order("position ASC")
+end
 
 def self.ruby
 where(subtitle: 'Ruby on Rails ')
