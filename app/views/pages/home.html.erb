@@ -1,22 +1,29 @@
-<h1>Hi, <%= current_user.first_name  %> </h1>
+<h1 style="padding-bottom:20px">Hi, <%= current_user.first_name  %> </h1>
 <!DOCTYPE html>
 
 
   <body>
 
-    
 
-         
 
           <div class="inner cover">
-            <h1 class="cover-heading">Cover your page.</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+            <h1 class="cover-heading">Welcome to my Online Home</h1>
+            <p class="lead"> This is Jack Leonard's online portfolio. Be free to browse around, and learn all about me.</p>
             <p class="lead">
               <%= link_to "About Me",  about_path,  class: "btn btn-lg btn-secondary"%>
             </p>
           </div>
 
-        
+            
+  <%= video_tag(
+           'MPV.mp4', 
+           id: 'background',
+           autoplay: true,
+           loop: false,
+           muted: true,
+           poster: 'home_bg.png'
+           ) %>
+         
 
     
  
