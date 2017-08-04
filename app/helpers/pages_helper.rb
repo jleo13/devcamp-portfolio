@@ -1,6 +1,5 @@
 module PagesHelper
   def twitter_parser tweet
-    tweet =" DLizcias_okashi: RT @DigiSlice: 📱Based on #Apple quarterly guidance, #iPhone8 will launch in September https://t.co/A3WfAhKc99"
     
 regex = %r{
       \b
