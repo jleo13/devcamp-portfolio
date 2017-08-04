@@ -159,7 +159,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 55rem;
+    width: 65rem;
   }
 }
 
@@ -191,8 +191,8 @@ body {
   
   
   .app-nav span {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   #background{
@@ -214,3 +214,29 @@ body {
   color: white;
   
 }
+
+.tech-news {
+  color: black;
+  margin: 20px;
+}
+
+.tech-news a {
+  color: grey;
+ 
+}
+.tech-news > .card {
+  padding: 30px;
+ 
+}
+
+#float-me{
+  float: center;
+  text-allign: right;
+}
+
+.cover-heading{
+  padding-top: 100px;
+  
+}
+
+
