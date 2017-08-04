@@ -9,10 +9,16 @@
        <%= @blog.body %>
    </p>         
        
+<!-- Start of comment form -->
 
+<%= render 'comments/comment_form' %>
+<!-- Start of Comments  -->
+<%= render @blog.comments %>
 
 
         </div>
+        
+        
 
 
 
