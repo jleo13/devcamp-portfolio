@@ -19,6 +19,7 @@
 //= require cocoon
 //= require gritter
 //= require jquery-ui
+//= require cable
 //= require turbolinks
 //= require_tree .
 
