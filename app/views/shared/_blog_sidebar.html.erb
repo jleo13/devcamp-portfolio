@@ -4,6 +4,13 @@
             <h4>About the Author</h4>
             <p> <em>Jack Leonard</em> Is a lover of all things minimal, antiskoeumophic, minimal, and functional. </p>
           </div>
+          
+          <div class="sidebar-module">
+            <h4> Topics </h4>
+            <% @side_bar_topics.each do |topic| %>
+            <p> <%= link_to topic.title, topic_path(topic) %> </p>
+            <% end %>
+          </div>
     
           <div class="sidebar-module">
             <h4>Elsewhere</h4>
