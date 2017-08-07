@@ -1,4 +1,9 @@
-<h1>About Me</h1>
+
+<div class="app-card-container about-me">
+  <div class="color">
+  <div class="card">
+    
+  <h1 class="text">About Me</h1>
 
 <hr>
 
@@ -8,7 +13,25 @@
     <%= image_tag "jackavatar.jpg",
     width: 300, alt: "profile image"   %>
     
+    
+    <div class="skills">
+    <% @skills.each do |skill| %>
+    <div class="skill">
+          <h4><%= skill.title %> </h4>
+    </div>
+
+    <div class='progress'>
+      <div class="progress-bar " gole="progressbar" aria-valuenow="<%= skill.percent_utilized %>" aria-valuemax="100" style="width: <%= skill.percent_utilized %>%">
+        
+      </div>
+    </div>
   </div>
+  
+  
+    
+    <% end %>
+  </div>
+
 
  <div class="col-md-8">
     <p>
@@ -19,9 +42,11 @@ I  still love reading and learning to this day. Some of the things I love to do 
 </p>
 
 
-<div class="container">
-  <div class="btn btn-primary" data-toggle="collapse" data-target ="#demo">Read More </div>
+<div class="container text ">
+   <button class="btn btn-primary" data-toggle="collapse" data-target ="#demo">Read More </button>
+  
   <div id="demo" class="collapse">
+     
 <p>
 I use my technology skills in a number of different creative ways. The first technology  of which I learned is kind of unnatrual for how young I was.  When I was 8, I would wish for programming books to read. Later, I learned of the free nature of the internet and immersed my self in youtube tutorials.
 While I never published anything, I did get a grasp of basic computer science, HTML, CSS, C, Objective-C, and Java. These skills have still stuck to me to this day, (except Objective-C. That was sad to see it leave....)
@@ -48,6 +73,8 @@ Hopefully I'll find a way to combine some of these skills together into a profes
 Thanks for coming to my little website! Please visit avatarbyjack.weebly.com and share this with a friend!  
   
 </p>
+
+
 </div>
 
 </div>
@@ -58,4 +85,9 @@ Thanks for coming to my little website! Please visit avatarbyjack.weebly.com and
 
 
 <div>
+
+
+  </div>
+  </div>
+</div>
 

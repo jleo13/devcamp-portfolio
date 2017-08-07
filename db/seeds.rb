@@ -6,6 +6,17 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.fir
 
+
+User.create!(
+  email: "test@test.com",
+  password: "asdfasdf",
+  password_confirmation: "asdfasdf",
+  name: "Jack Leonard",
+  roles: "site_admin"
+  )
+  
+  puts "1 Admin created"
+
 10.times do |topic|
  if topic < 3
     if topic == 1
