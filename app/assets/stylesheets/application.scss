@@ -1,6 +1,12 @@
 @import "bootstrap";
 @import "gritter";
 
+
+
+@font-face {
+font-family: 'Lovelo';
+src:font-url('Lovelo-Black.otf') format('opentype');
+}
 /*
  * Globals
  */
@@ -251,6 +257,7 @@ body {
 
 .card {
   background-color: #74d2f6;
+  padding: 30px;
   
 }
 
@@ -269,3 +276,32 @@ body {
   
 }
 
+
+.progress {
+  background: #ebedef;
+  border-radius: 32px;
+  height: 12px;
+  box-shadow: none;
+}
+.progress-bar {
+  background: #1abc9c;
+  line-height: 12px;
+  box-shadow: none;
+}
+.progress-bar-success {
+  background-color: #2ecc71;
+}
+.progress-bar-warning {
+  background-color: #f1c40f;
+}
+.progress-bar-danger {
+  background-color: #e74c3c;
+}
+.progress-bar-info {
+  background-color: #3498db;
+}
+
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
